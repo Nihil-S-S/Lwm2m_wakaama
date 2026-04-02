@@ -67,7 +67,7 @@
 
 #define PRV_MANUFACTURER "Open Mobile Alliance"
 #define PRV_MODEL_NUMBER "Lightweight M2M Client"
-#define PRV_SERIAL_NUMBER "345000123"
+#define PRV_SERIAL_NUMBER "357848200012289"
 #define PRV_FIRMWARE_VERSION "1.0"
 #define PRV_POWER_SOURCE_1 1
 #define PRV_POWER_SOURCE_2 5

@@ -13,6 +13,8 @@ set(WAKAAMA_TRANSPORT TINYDTLS)
 set(WAKAAMA_PLATFORM POSIX)
 add_subdirectory(../../../ wakaama_lib)
 
+find_package(Threads REQUIRED)
+
 add_executable(lwm2mclient_tinydtls)
 
 target_sources(
@@ -29,8 +31,9 @@ target_sources(
             ../common/object_server.c
             ../common/object_test.c
             ../common/system_api.c
+            ../common/object_software_mgmt.c
 )
 
-target_link_libraries(lwm2mclient_tinydtls PRIVATE wakaama_static)
+target_link_libraries(lwm2mclient_tinydtls PRIVATE wakaama_static Threads::Threads)
 
 enable_testing()

@@ -83,11 +83,67 @@
 
 #define DEFAULT_SERVER_IPV6 "[::1]"
 #define DEFAULT_SERVER_IPV4 "127.0.0.1"
+#define CONFIG_FILE "/data/lwm2m.conf"
+#define MAX_LINE    256
+
+typedef struct {
+    char psk_id[128];
+    char psk_key[256];    // hex string
+    char server_uri[256];
+    char endpoint[128];
+    int  lifetime;
+} lwm2m_config_t;
+
+static int load_config(lwm2m_config_t *cfg) {
+    FILE *fp = fopen(CONFIG_FILE, "r");
+    if (fp == NULL) {
+        fprintf(stderr, "[CFG] Cannot open %s: %s\n", CONFIG_FILE, strerror(errno));
+        return -1;
+    }
+
+    // set defaults
+    memset(cfg, 0, sizeof(lwm2m_config_t));
+    cfg->lifetime = 300;
+
+    char line[MAX_LINE];
+    while (fgets(line, sizeof(line), fp)) {
+        // strip newline
+        line[strcspn(line, "\r\n")] = 0;
+
+        // skip comments and empty lines
+        if (line[0] == '#' || line[0] == 0) continue;
+
+        char *eq = strchr(line, '=');
+        if (!eq) continue;
+
+        *eq = 0;
+        char *key = line;
+        char *val = eq + 1;
+
+        if      (strcmp(key, "psk_id")     == 0) strncpy(cfg->psk_id,     val, sizeof(cfg->psk_id)     - 1);
+        else if (strcmp(key, "psk_key")    == 0) strncpy(cfg->psk_key,    val, sizeof(cfg->psk_key)    - 1);
+        else if (strcmp(key, "server_uri") == 0) strncpy(cfg->server_uri, val, sizeof(cfg->server_uri) - 1);
+        else if (strcmp(key, "endpoint")   == 0) strncpy(cfg->endpoint,   val, sizeof(cfg->endpoint)   - 1);
+        else if (strcmp(key, "lifetime")   == 0) cfg->lifetime = atoi(val);
+    }
+
+    fclose(fp);
+
+    // validate required fields
+    if (cfg->psk_id[0] == 0 || cfg->psk_key[0] == 0 || cfg->server_uri[0] == 0) {
+        fprintf(stderr, "[CFG] Missing required fields in %s\n", CONFIG_FILE);
+        return -1;
+    }
+
+    fprintf(stdout, "[CFG] Loaded: uri=%s id=%s\n", cfg->server_uri, cfg->psk_id);
+    return 0;
+}
+
 
 int g_reboot = 0;
 static int g_quit = 0;
 
-#define OBJ_COUNT 9
+#define OBJ_COUNT 10
 lwm2m_object_t *objArray[OBJ_COUNT];
 
 // only backup security and server objects
@@ -792,6 +848,9 @@ static void prv_display_objects(lwm2m_context_t *lwm2mH, char *buffer, void *use
             case TEST_OBJECT_ID:
                 display_test_object(object);
                 break;
+            case 9: // Software Management Object
+                 display_software_mgmt_object(object);
+            break;
             default:
                 fprintf(stdout, "unknown object ID: %" PRIu16 "\n", object->objID);
                 break;
@@ -832,7 +891,7 @@ int main(int argc, char *argv[]) {
     const char *localPort = "56830";
     const char *server = NULL;
     const char *serverPort = LWM2M_STANDARD_PORT_STR;
-    const char *name = "testlwm2mclient";
+    const char *name = "WeWins-JVT1443-357848200012289";
     int lifetime = 300;
     int batterylevelchanging = 0;
     time_t reboot_time = 0;
@@ -1021,45 +1080,39 @@ int main(int argc, char *argv[]) {
      * Those functions are located in their respective object file.
      */
 #ifdef WITH_TINYDTLS
-    if (psk != NULL) {
-        pskLen = strlen(psk) / 2; // NOSONAR
-        pskBuffer = malloc(pskLen);
-
-        if (NULL == pskBuffer) {
-            fprintf(stderr, "Failed to create PSK binary buffer\r\n");
-            return -1;
-        }
-        // Hex string to binary
-        char *h = psk;
-        char *b = pskBuffer;
-        char xlate[] = "0123456789ABCDEF";
-
-        for (; *h; h += 2, ++b) {
-            char *l = strchr(xlate, toupper(*h));
-            char *r = strchr(xlate, toupper(*(h + 1)));
-
-            if (!r || !l) {
-                fprintf(stderr, "Failed to parse Pre-Shared-Key HEXSTRING\r\n");
-                return -1;
-            }
-
-            *b = ((l - xlate) << 4) + (r - xlate);
-        }
+    lwm2m_config_t cfg;
+    if (load_config(&cfg) != 0) {
+        fprintf(stderr, "Failed to load config from %s\n", CONFIG_FILE);
+        return -1;
     }
+
+    // convert hex PSK to binary
+    pskLen = strlen(cfg.psk_key) / 2;
+    pskBuffer = malloc(pskLen);
+    if (pskBuffer == NULL) {
+        fprintf(stderr, "Failed to allocate PSK buffer\n");
+        return -1;
+    }
+    char xlate[] = "0123456789ABCDEF";
+    for (int i = 0; i < pskLen; i++) {
+        char *h = strchr(xlate, toupper(cfg.psk_key[i * 2]));
+        char *l = strchr(xlate, toupper(cfg.psk_key[i * 2 + 1]));
+        pskBuffer[i] = ((h - xlate) << 4) | (l - xlate);
+    }
+
+    const char *serverUri = cfg.server_uri;
+    int serverId = 123;
+    pskId = cfg.psk_id;
+    name = cfg.endpoint[0] ? cfg.endpoint : name;
+    lifetime = cfg.lifetime;
 #endif
 
-    char serverUri[50];
-    int serverId = 123;
-#ifdef WITH_TINYDTLS
-    sprintf(serverUri, "coaps://%s:%s", server, serverPort); // NOSONAR
-#else
-    sprintf(serverUri, "coap://%s:%s", server, serverPort); // NOSONAR
-#endif
 #ifdef LWM2M_BOOTSTRAP
     objArray[0] = get_security_object(serverId, serverUri, pskId, pskBuffer, pskLen, bootstrapRequested);
 #else
     objArray[0] = get_security_object(serverId, serverUri, pskId, pskBuffer, pskLen, false);
 #endif
+
     if (NULL == objArray[0]) {
         fprintf(stderr, "Failed to create security object\r\n");
         return -1;
@@ -1123,6 +1176,12 @@ int main(int argc, char *argv[]) {
         fprintf(stderr, "Failed to create Access Control ACL resource for serverId: 999\r\n");
         return -1;
     }
+    objArray[9] = init_software_mgmt_object();
+    if (NULL == objArray[9]) {
+     fprintf(stderr, "Failed to create Software Management object\r\n");
+    return -1;
+}
+
     /*
      * The liblwm2m library is now initialized with the functions that will be in
      * charge of communication
@@ -1199,6 +1258,13 @@ int main(int argc, char *argv[]) {
          *    (eg. retransmission) and the time between the next operation
          */
         result = lwm2m_step(lwm2mH, &(tv.tv_sec));
+
+        // Notify server if Object 9 download state changed (must run on main thread)
+        {
+            lwm2m_object_t *swmObj = (lwm2m_object_t *)LWM2M_LIST_FIND(lwm2mH->objectList, 9);
+            if (swmObj) swm_notify_if_changed(lwm2mH, swmObj);
+        }
+
         fprintf(stdout, " -> State: ");
         switch (lwm2mH->state) {
         case STATE_INITIAL:
@@ -1234,7 +1300,18 @@ int main(int argc, char *argv[]) {
                 lwm2mH->state = STATE_INITIAL;
             } else
 #endif
-                return -1;
+            {
+                // Registration failed (e.g. network blip, server unreachable).
+                // Reset all servers to DEREGISTERED and restart from STATE_INITIAL
+                // so the client re-registers automatically instead of dying.
+                fprintf(stderr, "Registration failed, attempting re-registration...\r\n");
+                lwm2m_server_t *serverP = lwm2mH->serverList;
+                while (serverP != NULL) {
+                    serverP->status = STATE_DEREGISTERED;
+                    serverP = serverP->next;
+                }
+                lwm2mH->state = STATE_INITIAL;
+            }
         }
 #ifdef LWM2M_BOOTSTRAP
         update_bootstrap_info(&previousState, lwm2mH);
@@ -1374,6 +1451,9 @@ int main(int argc, char *argv[]) {
     free_object_conn_m(objArray[6]);
     free_object_conn_s(objArray[7]);
     acl_ctrl_free_object(objArray[8]);
+  
+    free_object_software_mgmt(objArray[9]);
+
 
     return 0;
 }

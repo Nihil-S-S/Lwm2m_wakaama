@@ -540,11 +540,13 @@ int lwm2m_connection_rehandshake(lwm2m_dtls_connection_t *connP, bool sendCloseN
     }
 
     // start a fresh handshake
+    // dtls_connect returns >0 on new attempt (bytes sent), 0 on session reuse, <0 on error
     int result = dtls_connect(connP->dtlsContext, connP->dtlsSession);
-    if (result != 0) {
+    if (result < 0) {
         printf("error dtls reconnection %d\n", result);
+        return result;
     }
-    return result;
+    return 0;
 }
 
 uint8_t lwm2m_buffer_send(void *sessionH, uint8_t *buffer, size_t length, void *userdata) {

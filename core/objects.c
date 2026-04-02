@@ -779,7 +779,6 @@ static int prv_getObjectTemplate(uint8_t * buffer,
 int object_getRegisterPayloadBufferLength(lwm2m_context_t * contextP)
 {
     size_t index;
-    int result;
     lwm2m_object_t * objectP;
     uint8_t buffer[REG_OBJECT_MIN_LEN + 5];
 
@@ -799,68 +798,69 @@ int object_getRegisterPayloadBufferLength(lwm2m_context_t * contextP)
     index += strlen(REG_LWM2M_RESOURCE_TYPE);
 
     for (objectP = contextP->objectList; objectP != NULL; objectP = objectP->next)
-    {
-        size_t start;
-        size_t length;
+{
+    size_t start;
+    size_t length;
 
-        if (objectP->objID == LWM2M_SECURITY_OBJECT_ID) continue;
+    if (objectP->objID == LWM2M_SECURITY_OBJECT_ID) continue;
 #ifndef LWM2M_VERSION_1_0
-        if (objectP->objID == LWM2M_OSCORE_OBJECT_ID) continue;
+    if (objectP->objID == LWM2M_OSCORE_OBJECT_ID) continue;
 #endif
 
-        start = index;
-        result = prv_getObjectTemplate(buffer, sizeof(buffer), objectP->objID);
-        if (result < 0) return 0;
-        length = result;
-        index += length;
+    if (objectP->versionMajor != 0 || objectP->versionMinor != 0) {
+        if (objectP->instanceList == NULL) {
+            // Emit object-level link with version
+            start = index;
+            int r = prv_getObjectTemplate(buffer, sizeof(buffer), objectP->objID);
+            if (r < 0) return 0;
+            length = r;
+            index += length;
 
-        if (objectP->versionMajor != 0 || objectP->versionMinor != 0)
-        {
             index -= 1;
             index += strlen(REG_VERSION_START);
-
-            result = utils_uintToText(objectP->versionMajor, buffer, sizeof(buffer));
-            if (result < 0) return 0;
-            index += result;
-
-            index += 1;
-
-            result = utils_uintToText(objectP->versionMinor, buffer, sizeof(buffer));
-            if (result < 0) return 0;
-            index += result;
-
-            index += 1;
-
-            if(objectP->instanceList != NULL)
-            {
-                start = index;
-                index += length;
-            }
+            r = utils_uintToText(objectP->versionMajor, buffer, sizeof(buffer));
+            if (r < 0) return 0;
+            index += r;
+            index += 1; // '.'
+            r = utils_uintToText(objectP->versionMinor, buffer, sizeof(buffer));
+            if (r < 0) return 0;
+            index += r;
+            index += 1; // ','
+        } else {
+            // No object-level entry; prepare template ONCE for instances
+            start = index;
+            int r = prv_getObjectTemplate(buffer, sizeof(buffer), objectP->objID);
+            if (r < 0) return 0;
+            length = r;
+            index += length;
         }
-        else if(objectP->instanceList == NULL)
-        {
+    } else {
+        // version == 0.x
+        start = index;
+        int r = prv_getObjectTemplate(buffer, sizeof(buffer), objectP->objID);
+        if (r < 0) return 0;
+        length = r;
+        index += length;
+
+        if (objectP->instanceList == NULL) {
             index -= 1;
             index += strlen(REG_PATH_END);
         }
+    }
 
-        if (objectP->instanceList != NULL)
-        {
-            lwm2m_list_t * targetP;
-            for (targetP = objectP->instanceList ; targetP != NULL ; targetP = targetP->next)
-            {
-                if (index != start + length)
-                {
-                    index += length;
-                }
-
-                result = utils_intToText(targetP->id, buffer, sizeof(buffer));
-                if (result == 0) return 0;
-                index += result;
-
-                index += strlen(REG_PATH_END);
+    if (objectP->instanceList != NULL) {
+        for (lwm2m_list_t *targetP = objectP->instanceList; targetP != NULL; targetP = targetP->next) {
+            if (index != start + length) {
+                index += length; // just account for copying the template
             }
+            int r = utils_intToText(targetP->id, buffer, sizeof(buffer));
+            if (r == 0) return 0;
+            index += r;
+            index += strlen(REG_PATH_END);
         }
     }
+}
+
 
     index += 1;  // account for trailing null
 
@@ -906,78 +906,80 @@ int object_getRegisterPayload(lwm2m_context_t * contextP,
     index += result;
 
     for (objectP = contextP->objectList; objectP != NULL; objectP = objectP->next)
-    {
-        size_t start;
-        size_t length;
+{
+    size_t start;
+    size_t length;
 
-        if (objectP->objID == LWM2M_SECURITY_OBJECT_ID) continue;
+    if (objectP->objID == LWM2M_SECURITY_OBJECT_ID) continue;
 
-        start = index;
-        result = prv_getObjectTemplate(buffer + index, bufferLen - index, objectP->objID);
-        if (result < 0) return 0;
-        length = result;
-        index += length;
+    if (objectP->versionMajor != 0 || objectP->versionMinor != 0) {
+        if (objectP->instanceList == NULL) {
+            // Emit object-level link with version
+            start = index;
+            int r = prv_getObjectTemplate(buffer + index, bufferLen - index, objectP->objID);
+            if (r < 0) return 0;
+            length = r;
+            index += length;
 
-        if (objectP->versionMajor != 0 || objectP->versionMinor != 0)
-        {
-            index--;
-            result = utils_stringCopy((char *)buffer + index, bufferLen - index, REG_VERSION_START);
-            if (result < 0) return 0;
-            index += result;
+            index--; // overwrite trailing '/'
+            r = utils_stringCopy((char *)buffer + index, bufferLen - index, REG_VERSION_START);
+            if (r < 0) return 0;
+            index += r;
 
-            result = utils_uintToText(objectP->versionMajor, buffer + index, bufferLen - index);
-            if (result < 0) return 0;
-            index += result;
+            r = utils_uintToText(objectP->versionMajor, buffer + index, bufferLen - index);
+            if (r < 0) return 0;
+            index += r;
 
-            if( index >= bufferLen) return 0;
+            if (index >= bufferLen) return 0;
             buffer[index++] = '.';
 
-            result = utils_uintToText(objectP->versionMinor, buffer + index, bufferLen - index);
-            if (result < 0) return 0;
-            index += result;
+            r = utils_uintToText(objectP->versionMinor, buffer + index, bufferLen - index);
+            if (r < 0) return 0;
+            index += r;
 
-            if( index >= bufferLen) return 0;
+            if (index >= bufferLen) return 0;
             buffer[index++] = REG_DELIMITER;
-
-            if(objectP->instanceList != NULL)
-            {
-                start = index;
-                result = prv_getObjectTemplate(buffer + index, bufferLen - index, objectP->objID);
-                if (result < 0) return 0;
-                length = result;
-                index += length;
-            }
+        } else {
+            // No object-level entry; prepare template ONCE for instances
+            start = index;
+            int r = prv_getObjectTemplate(buffer + index, bufferLen - index, objectP->objID);
+            if (r < 0) return 0;
+            length = r;
+            index += length;
         }
-        else if(objectP->instanceList == NULL)
-        {
+    } else {
+        // version == 0.x
+        start = index;
+        int r = prv_getObjectTemplate(buffer + index, bufferLen - index, objectP->objID);
+        if (r < 0) return 0;
+        length = r;
+        index += length;
+
+        if (objectP->instanceList == NULL) {
             index--;
-            result = utils_stringCopy((char *)buffer + index, bufferLen - index, REG_PATH_END);
-            if (result < 0) return 0;
-            index += result;
-        }
-
-        if (objectP->instanceList != NULL)
-        {
-            lwm2m_list_t * targetP;
-            for (targetP = objectP->instanceList ; targetP != NULL ; targetP = targetP->next)
-            {
-                if (index != start + length)
-                {
-                    if (bufferLen - index <= length) return 0;
-                    memcpy(buffer + index, buffer + start, length);
-                    index += length;
-                }
-
-                result = utils_intToText(targetP->id, buffer + index, bufferLen - index);
-                if (result == 0) return 0;
-                index += result;
-
-                result = utils_stringCopy((char *)buffer + index, bufferLen - index, REG_PATH_END);
-                if (result < 0) return 0;
-                index += result;
-            }
+            int rr = utils_stringCopy((char *)buffer + index, bufferLen - index, REG_PATH_END);
+            if (rr < 0) return 0;
+            index += rr;
         }
     }
+
+    if (objectP->instanceList != NULL) {
+        for (lwm2m_list_t *targetP = objectP->instanceList; targetP != NULL; targetP = targetP->next) {
+            if (index != start + length) {
+                if (bufferLen - index <= length) return 0;
+                memcpy(buffer + index, buffer + start, length);
+                index += length;
+            }
+            int r = utils_intToText(targetP->id, buffer + index, bufferLen - index);
+            if (r == 0) return 0;
+            index += r;
+
+            r = utils_stringCopy((char *)buffer + index, bufferLen - index, REG_PATH_END);
+            if (r < 0) return 0;
+            index += r;
+        }
+    }
+}
 
     if (index > 0)
     {

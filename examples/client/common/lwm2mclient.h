@@ -107,5 +107,9 @@ void clean_security_object(lwm2m_object_t *objectP);
 char *get_server_uri(lwm2m_object_t *objectP, uint16_t secObjInstID);
 void display_security_object(lwm2m_object_t *objectP);
 void copy_security_object(lwm2m_object_t *objectDest, lwm2m_object_t *objectSrc);
+lwm2m_object_t *init_software_mgmt_object(void);
+void free_object_software_mgmt(lwm2m_object_t *objectP);
+void display_software_mgmt_object(lwm2m_object_t *objectP);
+void swm_notify_if_changed(lwm2m_context_t *lwm2mH, lwm2m_object_t *objectP);
 
 #endif /* LWM2MCLIENT_H_ */

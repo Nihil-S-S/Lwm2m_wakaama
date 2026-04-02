@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "liblwm2m.h": "c",
+        "variant": "c"
+    }
+}

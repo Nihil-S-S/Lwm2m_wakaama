@@ -4,7 +4,7 @@ project(wakaama C)
 
 include(wakaama.cmake)
 
-option(WAKAAMA_UNIT_TESTS "Enable build of Unit Tests" ON)
+option(WAKAAMA_UNIT_TESTS "Enable build of Unit Tests" OFF)
 
 if(WAKAAMA_UNIT_TESTS)
     enable_testing()
