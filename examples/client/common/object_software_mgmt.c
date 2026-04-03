@@ -3,9 +3,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-#include <sys/wait.h>
 #include <unistd.h>
 #include <pthread.h>
+#include <sys/stat.h>
+#include <curl/curl.h>
 
 // LwM2M Object 9: Software Management with correct resource mapping
 #define SWM_OBJ_ID               9
@@ -24,10 +25,20 @@
 #define SW_STATE_UPDATING    3
 #define SW_STATE_UPDATED     4
 
-// Software Update Result Values
-#define SW_RESULT_INITIAL    0
-#define SW_RESULT_SUCCESS    1
-#define SW_RESULT_FAILURE    2
+// Software Update Result Values (OMA LwM2M Object 9 spec /9/0/9)
+#define SW_RESULT_INITIAL         0   // Initial value
+#define SW_RESULT_DOWNLOADING     1   // Downloading in progress
+#define SW_RESULT_INSTALLED       2   // Successfully installed
+#define SW_RESULT_NO_STORAGE      3   // Not enough storage
+#define SW_RESULT_OOM             4   // Out of memory
+#define SW_RESULT_CONN_LOST       5   // Connection lost during download
+#define SW_RESULT_INTEGRITY_FAIL  6   // Package integrity check failure
+#define SW_RESULT_UNSUPPORTED     7   // Unsupported package type
+#define SW_RESULT_INVALID_URI     8   // Invalid URI
+#define SW_RESULT_DEVICE_ERROR    9   // Device defined update error
+
+#define DOWNLOAD_MAX_RETRIES  3
+#define DOWNLOAD_RETRY_DELAY  5   // seconds between retries
 
 typedef struct {
     char packageName[128];
@@ -48,38 +59,82 @@ typedef struct {
     software_mgmt_data_t *data;
 } download_args_t;
 
+static size_t write_callback(void *ptr, size_t size, size_t nmemb, void *stream) {
+    return fwrite(ptr, size, nmemb, (FILE *)stream);
+}
+
 static void *download_thread(void *arg) {
     download_args_t *dl = (download_args_t *)arg;
     software_mgmt_data_t *data = dl->data;
-
-    // Remove any leftover file from a previous download. Without this, wget -c
-    // would try to "resume" a fully-downloaded file, causing HTTP 416.
-    remove(dl->destpath);
-
-    pid_t pid = fork();
-    if (pid < 0) {
-        pthread_mutex_lock(&data->lock);
-        data->updateState = SW_STATE_IDLE;
-        data->updateResult = SW_RESULT_FAILURE;
-        data->threadRunning = false;
-        data->stateChanged = true;
-        pthread_mutex_unlock(&data->lock);
-        free(dl);
-        return NULL;
-    }
-    if (pid == 0) {
-        /* -c: resume partial download if file exists (network resilience)
-         * -t 3: retry up to 3 times on transient errors
-         * -T 30: per-connection timeout */
-        execlp("wget", "wget", "-q", "-c", "-T", "30", "-t", "3", "-O", dl->destpath, dl->uri, (char *)NULL);
-        _exit(1);
-    }
-
-    int status;
     bool ok = false;
-    if (waitpid(pid, &status, 0) >= 0 && WIFEXITED(status) && WEXITSTATUS(status) == 0) {
-        ok = true;
-    } else {
+    uint8_t last_result = SW_RESULT_CONN_LOST;
+
+    for (int attempt = 0; attempt < DOWNLOAD_MAX_RETRIES && !ok; attempt++) {
+        if (attempt > 0) {
+            fprintf(stdout, "[SWM] Retry %d/%d: %s\n", attempt, DOWNLOAD_MAX_RETRIES - 1, dl->uri);
+            sleep(DOWNLOAD_RETRY_DELAY);
+        }
+
+        // Check for partial file to resume from
+        curl_off_t resume_from = 0;
+        struct stat st;
+        if (stat(dl->destpath, &st) == 0) {
+            resume_from = (curl_off_t)st.st_size;
+            fprintf(stdout, "[SWM] Resuming from byte %lld\n", (long long)resume_from);
+        }
+
+        FILE *fp = fopen(dl->destpath, resume_from > 0 ? "ab" : "wb");
+        if (!fp) {
+            fprintf(stderr, "[SWM] Cannot open %s for writing\n", dl->destpath);
+            break;
+        }
+
+        CURL *curl = curl_easy_init();
+        if (!curl) {
+            fclose(fp);
+            break;
+        }
+
+        curl_easy_setopt(curl, CURLOPT_URL, dl->uri);
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_callback);
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
+        curl_easy_setopt(curl, CURLOPT_RESUME_FROM_LARGE, resume_from);
+        curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);    // follow HTTP redirects (S3 presigned URLs)
+        curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 30L);   // 30s connection timeout
+        curl_easy_setopt(curl, CURLOPT_LOW_SPEED_LIMIT, 1L);   // stall detection: < 1 byte/s
+        curl_easy_setopt(curl, CURLOPT_LOW_SPEED_TIME, 30L);   // for 30s = network stall → retry
+        curl_easy_setopt(curl, CURLOPT_FAILONERROR, 1L);       // treat HTTP 4xx/5xx as error
+
+        CURLcode res = curl_easy_perform(curl);
+        long http_code = 0;
+        curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &http_code);
+        curl_easy_cleanup(curl);
+        fclose(fp);
+
+        if (res == CURLE_OK) {
+            ok = true;
+            fprintf(stdout, "[SWM] Download complete: %s (HTTP %ld)\n", dl->destpath, http_code);
+        } else {
+            fprintf(stderr, "[SWM] Download attempt %d failed: %s (HTTP %ld)\n",
+                    attempt + 1, curl_easy_strerror(res), http_code);
+            // Map curl error to OMA result code for final failure reporting
+            if (res == CURLE_COULDNT_RESOLVE_HOST || res == CURLE_COULDNT_CONNECT ||
+                res == CURLE_OPERATION_TIMEDOUT || res == CURLE_SEND_ERROR ||
+                res == CURLE_RECV_ERROR || res == CURLE_GOT_NOTHING) {
+                last_result = SW_RESULT_CONN_LOST;
+            } else if (res == CURLE_BAD_CONTENT_ENCODING || res == CURLE_PARTIAL_FILE) {
+                last_result = SW_RESULT_INTEGRITY_FAIL;
+            } else if (http_code >= 400 && http_code < 500) {
+                // Any 4xx (400, 403, 404 etc.) = bad/inaccessible URI
+                last_result = SW_RESULT_INVALID_URI;
+            } else {
+                last_result = SW_RESULT_DEVICE_ERROR;
+            }
+            // Keep partial file for next resume attempt — do not remove
+        }
+    }
+
+    if (!ok) {
         remove(dl->destpath);
     }
 
@@ -87,14 +142,13 @@ static void *download_thread(void *arg) {
     if (ok) {
         data->updateState = SW_STATE_DOWNLOADED;
         data->updateResult = SW_RESULT_INITIAL;
-        fprintf(stdout, "[SWM] Package downloaded: %s\n", dl->destpath);
     } else {
         data->updateState = SW_STATE_IDLE;
-        data->updateResult = SW_RESULT_FAILURE;
-        fprintf(stderr, "[SWM] Download failed: %s\n", dl->uri);
+        data->updateResult = last_result;
+        fprintf(stderr, "[SWM] Download failed after %d retries: %s\n", DOWNLOAD_MAX_RETRIES, dl->uri);
     }
     data->threadRunning = false;
-    data->stateChanged = true;  // signal main loop to notify server
+    data->stateChanged = true;
     pthread_mutex_unlock(&data->lock);
 
     free(dl);
@@ -293,7 +347,7 @@ static uint8_t prv_sw_execute(lwm2m_context_t *contextP, uint16_t instanceId,
         // where download thread changes state between check and act.
         pthread_mutex_lock(&data->lock);
         if (data->updateState != SW_STATE_DOWNLOADED) {
-            data->updateResult = SW_RESULT_FAILURE;
+            data->updateResult = SW_RESULT_CONN_LOST;
             data->stateChanged = true;
             pthread_mutex_unlock(&data->lock);
             fprintf(stderr, "[SWM] Cannot install: package not in DOWNLOADED state\n");
@@ -305,7 +359,7 @@ static uint8_t prv_sw_execute(lwm2m_context_t *contextP, uint16_t instanceId,
         // Simulate installation
         pthread_mutex_lock(&data->lock);
         data->updateState = SW_STATE_UPDATED;
-        data->updateResult = SW_RESULT_SUCCESS;
+        data->updateResult = SW_RESULT_INSTALLED;
         data->stateChanged = true;
         pthread_mutex_unlock(&data->lock);
 
@@ -357,7 +411,8 @@ lwm2m_object_t *init_software_mgmt_object(void) {
     if (!data) { lwm2m_free(obj->instanceList); lwm2m_free(obj); return NULL; }
     memset(data, 0, sizeof(software_mgmt_data_t));
     data->updateState = SW_STATE_IDLE;
-    data->updateResult = SW_RESULT_INITIAL;
+    data->updateResult = SW_RESULT_CONN_LOST; // Signal to server that any prior task did not complete
+    data->stateChanged = true;              // Notify server of current state right after registration
     pthread_mutex_init(&data->lock, NULL);
 
     obj->userData = data;

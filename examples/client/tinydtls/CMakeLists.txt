@@ -14,6 +14,7 @@ set(WAKAAMA_PLATFORM POSIX)
 add_subdirectory(../../../ wakaama_lib)
 
 find_package(Threads REQUIRED)
+find_package(CURL REQUIRED)
 
 add_executable(lwm2mclient_tinydtls)
 
@@ -34,6 +35,7 @@ target_sources(
             ../common/object_software_mgmt.c
 )
 
-target_link_libraries(lwm2mclient_tinydtls PRIVATE wakaama_static Threads::Threads)
+target_link_libraries(lwm2mclient_tinydtls PRIVATE wakaama_static Threads::Threads CURL::libcurl)
+target_link_options(lwm2mclient_tinydtls PRIVATE -Wl,--allow-shlib-undefined)
 
 enable_testing()
