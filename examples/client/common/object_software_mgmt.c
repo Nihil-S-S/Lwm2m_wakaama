@@ -51,6 +51,7 @@ typedef struct {
     pthread_t downloadThread;
     bool threadRunning;
     volatile bool stateChanged; // set by thread, cleared+acted on by main loop
+    volatile bool cancelDownload; // set by free_object to abort curl
 } software_mgmt_data_t;
 
 typedef struct {
@@ -61,6 +62,14 @@ typedef struct {
 
 static size_t write_callback(void *ptr, size_t size, size_t nmemb, void *stream) {
     return fwrite(ptr, size, nmemb, (FILE *)stream);
+}
+
+// Called by curl periodically — return non-zero to abort the transfer
+static int progress_callback(void *clientp, curl_off_t dltotal, curl_off_t dlnow,
+                             curl_off_t ultotal, curl_off_t ulnow) {
+    (void)dltotal; (void)dlnow; (void)ultotal; (void)ulnow;
+    software_mgmt_data_t *data = (software_mgmt_data_t *)clientp;
+    return data->cancelDownload ? 1 : 0;
 }
 
 static void *download_thread(void *arg) {
@@ -104,6 +113,9 @@ static void *download_thread(void *arg) {
         curl_easy_setopt(curl, CURLOPT_LOW_SPEED_LIMIT, 1L);   // stall detection: < 1 byte/s
         curl_easy_setopt(curl, CURLOPT_LOW_SPEED_TIME, 30L);   // for 30s = network stall → retry
         curl_easy_setopt(curl, CURLOPT_FAILONERROR, 1L);       // treat HTTP 4xx/5xx as error
+        curl_easy_setopt(curl, CURLOPT_XFERINFOFUNCTION, progress_callback);
+        curl_easy_setopt(curl, CURLOPT_XFERINFODATA, data);
+        curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 0L);        // enable progress callback
 
         CURLcode res = curl_easy_perform(curl);
         long http_code = 0;
@@ -114,6 +126,11 @@ static void *download_thread(void *arg) {
         if (res == CURLE_OK) {
             ok = true;
             fprintf(stdout, "[SWM] Download complete: %s (HTTP %ld)\n", dl->destpath, http_code);
+        } else if (res == CURLE_RANGE_ERROR || (resume_from > 0 && http_code == 200)) {
+            // Server doesn't support range requests — delete partial file and retry from scratch
+            fprintf(stderr, "[SWM] Server doesn't support resume, restarting download\n");
+            remove(dl->destpath);
+            resume_from = 0;
         } else {
             fprintf(stderr, "[SWM] Download attempt %d failed: %s (HTTP %ld)\n",
                     attempt + 1, curl_easy_strerror(res), http_code);
@@ -434,8 +451,8 @@ void free_object_software_mgmt(lwm2m_object_t *objectP) {
             bool running = data->threadRunning;
             pthread_mutex_unlock(&data->lock);
             if (running) {
-                pthread_cancel(data->downloadThread);  // signal cancellation
-                pthread_join(data->downloadThread, NULL);  // wait for exit
+                data->cancelDownload = true;           // signal curl to abort cleanly
+                pthread_join(data->downloadThread, NULL);  // wait for thread to exit
             }
             pthread_mutex_destroy(&data->lock);
             lwm2m_free(data);

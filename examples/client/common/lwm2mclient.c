@@ -1427,11 +1427,8 @@ int main(int argc, char *argv[]) {
      * Finally when the loop is left smoothly - asked by user in the command line interface - we unregister our client
      * from it
      */
+    free(pskBuffer);
     if (g_quit == 1) {
-#ifdef WITH_TINYDTLS
-        free(pskBuffer);
-#endif
-
 #ifdef LWM2M_BOOTSTRAP
         close_backup_object();
 #endif
