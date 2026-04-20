@@ -26,7 +26,7 @@ jobs:
     - name: Install dependencies from APT repository
       run: |
         sudo apt-get update
-        sudo apt-get install cmake libcunit1-dev ninja-build unzip wget
+        sudo apt-get install cmake libcunit1-dev ninja-build unzip wget libcurl4-openssl-dev
 
     - name: Build all binaries
       run: |
@@ -54,7 +54,7 @@ jobs:
     - name: Install dependencies from APT repository
       run: |
         sudo apt-get update
-        sudo apt-get install cmake libcunit1-dev ninja-build unzip wget
+        sudo apt-get install cmake libcunit1-dev ninja-build unzip wget libcurl4-openssl-dev
 
     - name: Build examples as stand-alone projects
       run: |
