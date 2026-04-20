@@ -16,6 +16,8 @@
 
 # QtCreator
 build-*
+!build-client-tinydtls-arm
+!build-client-tinydtls-pc
 
 # CLion
 .idea
