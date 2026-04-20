@@ -28,6 +28,7 @@ char *lwm2m_log_fmt_message(const char *fmt, ...) {
     static char txt[LWM2M_LOG_MAX_MSG_TXT_SIZE];
     memset(txt, 0, sizeof txt); // just to be safe
     vsnprintf(txt, LWM2M_LOG_MAX_MSG_TXT_SIZE, fmt, args);
+    va_end(args);
     return txt;
 }
 

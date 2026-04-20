@@ -479,6 +479,7 @@ void lwm2m_connection_free(lwm2m_dtls_connection_t *connList) {
         lwm2m_dtls_connection_t *nextP;
 
         nextP = connList->next;
+        free(connList->dtlsSession);
         free(connList);
 
         connList = nextP;

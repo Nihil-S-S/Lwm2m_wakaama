@@ -78,7 +78,7 @@ static void *download_thread(void *arg) {
     bool ok = false;
     uint8_t last_result = SW_RESULT_CONN_LOST;
 
-    for (int attempt = 0; attempt < DOWNLOAD_MAX_RETRIES && !ok; attempt++) {
+    for (int attempt = 0; attempt < DOWNLOAD_MAX_RETRIES && !ok && !data->cancelDownload; attempt++) {
         if (attempt > 0) {
             fprintf(stdout, "[SWM] Retry %d/%d: %s\n", attempt, DOWNLOAD_MAX_RETRIES - 1, dl->uri);
             sleep(DOWNLOAD_RETRY_DELAY);
@@ -135,7 +135,9 @@ static void *download_thread(void *arg) {
             fprintf(stderr, "[SWM] Download attempt %d failed: %s (HTTP %ld)\n",
                     attempt + 1, curl_easy_strerror(res), http_code);
             // Map curl error to OMA result code for final failure reporting
-            if (res == CURLE_COULDNT_RESOLVE_HOST || res == CURLE_COULDNT_CONNECT ||
+            if (res == CURLE_ABORTED_BY_CALLBACK) {
+                last_result = SW_RESULT_CONN_LOST; // cancelled — keep partial file
+            } else if (res == CURLE_COULDNT_RESOLVE_HOST || res == CURLE_COULDNT_CONNECT ||
                 res == CURLE_OPERATION_TIMEDOUT || res == CURLE_SEND_ERROR ||
                 res == CURLE_RECV_ERROR || res == CURLE_GOT_NOTHING) {
                 last_result = SW_RESULT_CONN_LOST;
@@ -152,7 +154,11 @@ static void *download_thread(void *arg) {
     }
 
     if (!ok) {
-        remove(dl->destpath);
+        if (!data->cancelDownload) {
+            // All retries exhausted — delete the broken partial file
+            remove(dl->destpath);
+        }
+        // If cancelled, keep the partial file so next download can resume
     }
 
     pthread_mutex_lock(&data->lock);
@@ -162,7 +168,10 @@ static void *download_thread(void *arg) {
     } else {
         data->updateState = SW_STATE_IDLE;
         data->updateResult = last_result;
-        fprintf(stderr, "[SWM] Download failed after %d retries: %s\n", DOWNLOAD_MAX_RETRIES, dl->uri);
+        if (data->cancelDownload)
+            fprintf(stderr, "[SWM] Download cancelled, partial file kept for resume: %s\n", dl->destpath);
+        else
+            fprintf(stderr, "[SWM] Download failed after %d retries: %s\n", DOWNLOAD_MAX_RETRIES, dl->uri);
     }
     data->threadRunning = false;
     data->stateChanged = true;
@@ -310,6 +319,7 @@ static uint8_t prv_sw_write(lwm2m_context_t *contextP, uint16_t instanceId,
             data->updateState = SW_STATE_DOWNLOADING;
             data->updateResult = SW_RESULT_INITIAL;
             data->threadRunning = true;
+            data->cancelDownload = false; // clear any prior cancel flag before new download
             data->stateChanged = true;  // notify server: download started
             pthread_mutex_unlock(&data->lock);
 
