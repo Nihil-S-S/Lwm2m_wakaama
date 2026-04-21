@@ -10,15 +10,15 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/3.22.1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/3.22.1/CompilerIdC/a.out"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/CMakeTmp
+Change Dir: /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3daac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3daac.dir/build.make CMakeFiles/cmTC_3daac.dir/build
-gmake[1]: Entering directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o
-/usr/bin/aarch64-linux-gnu-gcc   -v -o CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_447ce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_447ce.dir/build.make CMakeFiles/cmTC_447ce.dir/build
+gmake[1]: Entering directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o
+/usr/bin/aarch64-linux-gnu-gcc   -v -o CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/aarch64-linux-gnu-gcc
 Target: aarch64-linux-gnu
@@ -26,19 +26,19 @@ Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~2
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3daac.dir/'
- /usr/lib/gcc-cross/aarch64-linux-gnu/11/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3daac.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cc7fVDO7.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_447ce.dir/'
+ /usr/lib/gcc-cross/aarch64-linux-gnu/11/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_447ce.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccEdE0JO.s
 GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.3) version 11.4.0 (aarch64-linux-gnu)
 	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
 ignoring nonexistent directory "/usr/lib/gcc-cross/aarch64-linux-gnu/11/include-fixed"
-ignoring nonexistent directory "/usr/include/aarch64-linux-gnu"
 #include "..." search starts here:
 #include <...> search starts here:
  /usr/lib/gcc-cross/aarch64-linux-gnu/11/include
  /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/include
+ /usr/include/aarch64-linux-gnu
  /usr/include
 End of search list.
 GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.3) version 11.4.0 (aarch64-linux-gnu)
@@ -46,15 +46,15 @@ GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.3) version 11.4.0 (aarch64-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 2a6f833664a1d9b9ebcff0efa3d423b5
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3daac.dir/'
- /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o /tmp/cc7fVDO7.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_447ce.dir/'
+ /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o /tmp/ccEdE0JO.s
 GNU assembler version 2.38 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
 COMPILER_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/
 LIBRARY_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.'
-Linking C executable cmTC_3daac
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3daac.dir/link.txt --verbose=1
-/usr/bin/aarch64-linux-gnu-gcc  -v CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o -o cmTC_3daac 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_447ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_447ce.dir/link.txt --verbose=1
+/usr/bin/aarch64-linux-gnu-gcc  -v CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o -o cmTC_447ce 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/aarch64-linux-gnu-gcc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/aarch64-linux-gnu/11/lto-wrapper
@@ -65,10 +65,10 @@ Supported LTO compression algorithms: zlib zstd
 gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3) 
 COMPILER_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/
 LIBRARY_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3daac' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_3daac.'
- /usr/lib/gcc-cross/aarch64-linux-gnu/11/collect2 -plugin /usr/lib/gcc-cross/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc-cross/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2SRo5D.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_3daac /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc-cross/aarch64-linux-gnu/11 -L/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc-cross/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3daac' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_3daac.'
-gmake[1]: Leaving directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_447ce' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_447ce.'
+ /usr/lib/gcc-cross/aarch64-linux-gnu/11/collect2 -plugin /usr/lib/gcc-cross/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc-cross/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccACsWBs.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_447ce /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc-cross/aarch64-linux-gnu/11 -L/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc-cross/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_447ce' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_447ce.'
+gmake[1]: Leaving directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/CMakeTmp'
 
 
 
@@ -77,22 +77,24 @@ Parsed C implicit include dir info from above output: rv=done
   found start of implicit include info
     add: [/usr/lib/gcc-cross/aarch64-linux-gnu/11/include]
     add: [/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/include]
+    add: [/usr/include/aarch64-linux-gnu]
     add: [/usr/include]
   end of search list found
   collapse include dir [/usr/lib/gcc-cross/aarch64-linux-gnu/11/include] ==> [/usr/lib/gcc-cross/aarch64-linux-gnu/11/include]
   collapse include dir [/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/include] ==> [/usr/aarch64-linux-gnu/include]
+  collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
   collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/lib/gcc-cross/aarch64-linux-gnu/11/include;/usr/aarch64-linux-gnu/include;/usr/include]
+  implicit include dirs: [/usr/lib/gcc-cross/aarch64-linux-gnu/11/include;/usr/aarch64-linux-gnu/include;/usr/include/aarch64-linux-gnu;/usr/include]
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(aarch64-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3daac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3daac.dir/build.make CMakeFiles/cmTC_3daac.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/aarch64-linux-gnu-gcc   -v -o CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_447ce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_447ce.dir/build.make CMakeFiles/cmTC_447ce.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/aarch64-linux-gnu-gcc   -v -o CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/aarch64-linux-gnu-gcc]
   ignore line: [Target: aarch64-linux-gnu]
@@ -100,19 +102,19 @@ Parsed C implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
   ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3daac.dir/']
-  ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/11/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3daac.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cc7fVDO7.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_447ce.dir/']
+  ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/11/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_447ce.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccEdE0JO.s]
   ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.3) version 11.4.0 (aarch64-linux-gnu)]
   ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
   ignore line: [ignoring nonexistent directory "/usr/lib/gcc-cross/aarch64-linux-gnu/11/include-fixed"]
-  ignore line: [ignoring nonexistent directory "/usr/include/aarch64-linux-gnu"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
   ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/11/include]
   ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/include]
+  ignore line: [ /usr/include/aarch64-linux-gnu]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
   ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.3) version 11.4.0 (aarch64-linux-gnu)]
@@ -120,15 +122,15 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 2a6f833664a1d9b9ebcff0efa3d423b5]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3daac.dir/']
-  ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o /tmp/cc7fVDO7.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_447ce.dir/']
+  ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o /tmp/ccEdE0JO.s]
   ignore line: [GNU assembler version 2.38 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
   ignore line: [COMPILER_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.']
-  ignore line: [Linking C executable cmTC_3daac]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3daac.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/aarch64-linux-gnu-gcc  -v CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o -o cmTC_3daac ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_447ce]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_447ce.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/aarch64-linux-gnu-gcc  -v CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o -o cmTC_447ce ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/aarch64-linux-gnu-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/aarch64-linux-gnu/11/lto-wrapper]
@@ -139,13 +141,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/11/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3daac' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_3daac.']
-  link line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/11/collect2 -plugin /usr/lib/gcc-cross/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc-cross/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2SRo5D.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_3daac /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc-cross/aarch64-linux-gnu/11 -L/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc-cross/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_447ce' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_447ce.']
+  link line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/11/collect2 -plugin /usr/lib/gcc-cross/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc-cross/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccACsWBs.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_447ce /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc-cross/aarch64-linux-gnu/11 -L/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc-cross/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/crtn.o]
     arg [/usr/lib/gcc-cross/aarch64-linux-gnu/11/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc-cross/aarch64-linux-gnu/11/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc-cross/aarch64-linux-gnu/11/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc2SRo5D.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccACsWBs.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -166,7 +168,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_3daac] ==> ignore
+    arg [cmTC_447ce] ==> ignore
     arg [/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o] ==> obj [/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o]
     arg [/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/crti.o] ==> obj [/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/crti.o]
     arg [/usr/lib/gcc-cross/aarch64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc-cross/aarch64-linux-gnu/11/crtbeginS.o]
@@ -177,7 +179,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib] ==> dir [/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib]
-    arg [CMakeFiles/cmTC_3daac.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_447ce.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -208,30 +210,30 @@ Parsed C implicit link information from above output:
 
 
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/CMakeTmp
+Change Dir: /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9f87d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9f87d.dir/build.make CMakeFiles/cmTC_9f87d.dir/build
-gmake[1]: Entering directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9f87d.dir/CheckIncludeFile.c.o
-/usr/bin/aarch64-linux-gnu-gcc    -o CMakeFiles/cmTC_9f87d.dir/CheckIncludeFile.c.o -c /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_9f87d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f87d.dir/link.txt --verbose=1
-/usr/bin/aarch64-linux-gnu-gcc CMakeFiles/cmTC_9f87d.dir/CheckIncludeFile.c.o -o cmTC_9f87d 
-gmake[1]: Leaving directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3cbd0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3cbd0.dir/build.make CMakeFiles/cmTC_3cbd0.dir/build
+gmake[1]: Entering directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3cbd0.dir/CheckIncludeFile.c.o
+/usr/bin/aarch64-linux-gnu-gcc    -o CMakeFiles/cmTC_3cbd0.dir/CheckIncludeFile.c.o -c /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3cbd0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cbd0.dir/link.txt --verbose=1
+/usr/bin/aarch64-linux-gnu-gcc CMakeFiles/cmTC_3cbd0.dir/CheckIncludeFile.c.o -o cmTC_3cbd0 
+gmake[1]: Leaving directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/CMakeTmp'
 
 
 
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
-Change Dir: /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/CMakeTmp
+Change Dir: /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d63e2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d63e2.dir/build.make CMakeFiles/cmTC_d63e2.dir/build
-gmake[1]: Entering directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d63e2.dir/src.c.o
-/usr/bin/aarch64-linux-gnu-gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_d63e2.dir/src.c.o -c /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_d63e2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d63e2.dir/link.txt --verbose=1
-/usr/bin/aarch64-linux-gnu-gcc CMakeFiles/cmTC_d63e2.dir/src.c.o -o cmTC_d63e2 
-gmake[1]: Leaving directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8d8ee/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8d8ee.dir/build.make CMakeFiles/cmTC_8d8ee.dir/build
+gmake[1]: Entering directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8d8ee.dir/src.c.o
+/usr/bin/aarch64-linux-gnu-gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8d8ee.dir/src.c.o -c /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8d8ee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d8ee.dir/link.txt --verbose=1
+/usr/bin/aarch64-linux-gnu-gcc CMakeFiles/cmTC_8d8ee.dir/src.c.o -o cmTC_8d8ee 
+gmake[1]: Leaving directory '/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/CMakeTmp'
 
 
 Source file was:

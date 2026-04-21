@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new
+CMAKE_BINARY_DIR = /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +97,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(CMAKE_COMMAND) -E cmake_progress_start /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib//CMakeFiles/progress.marks
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles 0
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(CMAKE_COMMAND) -E cmake_progress_start /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib//CMakeFiles/progress.marks
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/clean
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +113,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/preinstall
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/preinstall
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 wakaama_lib/CMakeFiles/wakaama_command_line.dir/rule:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/CMakeFiles/wakaama_command_line.dir/rule
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/CMakeFiles/wakaama_command_line.dir/rule
 .PHONY : wakaama_lib/CMakeFiles/wakaama_command_line.dir/rule
 
 # Convenience name for target.
@@ -137,12 +137,12 @@ wakaama_command_line: wakaama_lib/CMakeFiles/wakaama_command_line.dir/rule
 
 # fast build rule for target.
 wakaama_command_line/fast:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_command_line.dir/build.make wakaama_lib/CMakeFiles/wakaama_command_line.dir/build
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_command_line.dir/build.make wakaama_lib/CMakeFiles/wakaama_command_line.dir/build
 .PHONY : wakaama_command_line/fast
 
 # Convenience name for target.
 wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/rule:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/rule
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/rule
 .PHONY : wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/rule
 
 # Convenience name for target.
@@ -151,12 +151,12 @@ wakaama_platform_posix: wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/rule
 
 # fast build rule for target.
 wakaama_platform_posix/fast:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/build.make wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/build
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/build.make wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/build
 .PHONY : wakaama_platform_posix/fast
 
 # Convenience name for target.
 wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/rule:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/rule
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/rule
 .PHONY : wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/rule
 
 # Convenience name for target.
@@ -165,12 +165,12 @@ wakaama_transport_posix_udp: wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.
 
 # fast build rule for target.
 wakaama_transport_posix_udp/fast:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/build
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/build
 .PHONY : wakaama_transport_posix_udp/fast
 
 # Convenience name for target.
 wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/rule:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/rule
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/rule
 .PHONY : wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ wakaama_transport_tinydtls: wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.di
 
 # fast build rule for target.
 wakaama_transport_tinydtls/fast:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build
 .PHONY : wakaama_transport_tinydtls/fast
 
 # Convenience name for target.
 wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/rule:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/rule
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/rule
 .PHONY : wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/rule
 
 # Convenience name for target.
@@ -193,12 +193,12 @@ wakaama_transport_testing_fake: wakaama_lib/CMakeFiles/wakaama_transport_testing
 
 # fast build rule for target.
 wakaama_transport_testing_fake/fast:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/build
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/build
 .PHONY : wakaama_transport_testing_fake/fast
 
 # Convenience name for target.
 wakaama_lib/CMakeFiles/wakaama_static.dir/rule:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/CMakeFiles/wakaama_static.dir/rule
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wakaama_lib/CMakeFiles/wakaama_static.dir/rule
 .PHONY : wakaama_lib/CMakeFiles/wakaama_static.dir/rule
 
 # Convenience name for target.
@@ -207,7 +207,7 @@ wakaama_static: wakaama_lib/CMakeFiles/wakaama_static.dir/rule
 
 # fast build rule for target.
 wakaama_static/fast:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/build
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/build
 .PHONY : wakaama_static/fast
 
 coap/block.o: coap/block.c.o
@@ -215,7 +215,7 @@ coap/block.o: coap/block.c.o
 
 # target to build an object file
 coap/block.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.o
 .PHONY : coap/block.c.o
 
 coap/block.i: coap/block.c.i
@@ -223,7 +223,7 @@ coap/block.i: coap/block.c.i
 
 # target to preprocess a source file
 coap/block.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.i
 .PHONY : coap/block.c.i
 
 coap/block.s: coap/block.c.s
@@ -231,7 +231,7 @@ coap/block.s: coap/block.c.s
 
 # target to generate assembly for a file
 coap/block.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.s
 .PHONY : coap/block.c.s
 
 coap/er-coap-13/er-coap-13.o: coap/er-coap-13/er-coap-13.c.o
@@ -239,7 +239,7 @@ coap/er-coap-13/er-coap-13.o: coap/er-coap-13/er-coap-13.c.o
 
 # target to build an object file
 coap/er-coap-13/er-coap-13.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.o
 .PHONY : coap/er-coap-13/er-coap-13.c.o
 
 coap/er-coap-13/er-coap-13.i: coap/er-coap-13/er-coap-13.c.i
@@ -247,7 +247,7 @@ coap/er-coap-13/er-coap-13.i: coap/er-coap-13/er-coap-13.c.i
 
 # target to preprocess a source file
 coap/er-coap-13/er-coap-13.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.i
 .PHONY : coap/er-coap-13/er-coap-13.c.i
 
 coap/er-coap-13/er-coap-13.s: coap/er-coap-13/er-coap-13.c.s
@@ -255,7 +255,7 @@ coap/er-coap-13/er-coap-13.s: coap/er-coap-13/er-coap-13.c.s
 
 # target to generate assembly for a file
 coap/er-coap-13/er-coap-13.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.s
 .PHONY : coap/er-coap-13/er-coap-13.c.s
 
 coap/transaction.o: coap/transaction.c.o
@@ -263,7 +263,7 @@ coap/transaction.o: coap/transaction.c.o
 
 # target to build an object file
 coap/transaction.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.o
 .PHONY : coap/transaction.c.o
 
 coap/transaction.i: coap/transaction.c.i
@@ -271,7 +271,7 @@ coap/transaction.i: coap/transaction.c.i
 
 # target to preprocess a source file
 coap/transaction.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.i
 .PHONY : coap/transaction.c.i
 
 coap/transaction.s: coap/transaction.c.s
@@ -279,7 +279,7 @@ coap/transaction.s: coap/transaction.c.s
 
 # target to generate assembly for a file
 coap/transaction.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.s
 .PHONY : coap/transaction.c.s
 
 core/bootstrap.o: core/bootstrap.c.o
@@ -287,7 +287,7 @@ core/bootstrap.o: core/bootstrap.c.o
 
 # target to build an object file
 core/bootstrap.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.o
 .PHONY : core/bootstrap.c.o
 
 core/bootstrap.i: core/bootstrap.c.i
@@ -295,7 +295,7 @@ core/bootstrap.i: core/bootstrap.c.i
 
 # target to preprocess a source file
 core/bootstrap.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.i
 .PHONY : core/bootstrap.c.i
 
 core/bootstrap.s: core/bootstrap.c.s
@@ -303,7 +303,7 @@ core/bootstrap.s: core/bootstrap.c.s
 
 # target to generate assembly for a file
 core/bootstrap.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.s
 .PHONY : core/bootstrap.c.s
 
 core/discover.o: core/discover.c.o
@@ -311,7 +311,7 @@ core/discover.o: core/discover.c.o
 
 # target to build an object file
 core/discover.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.o
 .PHONY : core/discover.c.o
 
 core/discover.i: core/discover.c.i
@@ -319,7 +319,7 @@ core/discover.i: core/discover.c.i
 
 # target to preprocess a source file
 core/discover.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.i
 .PHONY : core/discover.c.i
 
 core/discover.s: core/discover.c.s
@@ -327,7 +327,7 @@ core/discover.s: core/discover.c.s
 
 # target to generate assembly for a file
 core/discover.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.s
 .PHONY : core/discover.c.s
 
 core/liblwm2m.o: core/liblwm2m.c.o
@@ -335,7 +335,7 @@ core/liblwm2m.o: core/liblwm2m.c.o
 
 # target to build an object file
 core/liblwm2m.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.o
 .PHONY : core/liblwm2m.c.o
 
 core/liblwm2m.i: core/liblwm2m.c.i
@@ -343,7 +343,7 @@ core/liblwm2m.i: core/liblwm2m.c.i
 
 # target to preprocess a source file
 core/liblwm2m.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.i
 .PHONY : core/liblwm2m.c.i
 
 core/liblwm2m.s: core/liblwm2m.c.s
@@ -351,7 +351,7 @@ core/liblwm2m.s: core/liblwm2m.c.s
 
 # target to generate assembly for a file
 core/liblwm2m.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.s
 .PHONY : core/liblwm2m.c.s
 
 core/list.o: core/list.c.o
@@ -359,7 +359,7 @@ core/list.o: core/list.c.o
 
 # target to build an object file
 core/list.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.o
 .PHONY : core/list.c.o
 
 core/list.i: core/list.c.i
@@ -367,7 +367,7 @@ core/list.i: core/list.c.i
 
 # target to preprocess a source file
 core/list.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.i
 .PHONY : core/list.c.i
 
 core/list.s: core/list.c.s
@@ -375,7 +375,7 @@ core/list.s: core/list.c.s
 
 # target to generate assembly for a file
 core/list.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.s
 .PHONY : core/list.c.s
 
 core/logging.o: core/logging.c.o
@@ -383,7 +383,7 @@ core/logging.o: core/logging.c.o
 
 # target to build an object file
 core/logging.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.o
 .PHONY : core/logging.c.o
 
 core/logging.i: core/logging.c.i
@@ -391,7 +391,7 @@ core/logging.i: core/logging.c.i
 
 # target to preprocess a source file
 core/logging.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.i
 .PHONY : core/logging.c.i
 
 core/logging.s: core/logging.c.s
@@ -399,7 +399,7 @@ core/logging.s: core/logging.c.s
 
 # target to generate assembly for a file
 core/logging.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.s
 .PHONY : core/logging.c.s
 
 core/management.o: core/management.c.o
@@ -407,7 +407,7 @@ core/management.o: core/management.c.o
 
 # target to build an object file
 core/management.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.o
 .PHONY : core/management.c.o
 
 core/management.i: core/management.c.i
@@ -415,7 +415,7 @@ core/management.i: core/management.c.i
 
 # target to preprocess a source file
 core/management.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.i
 .PHONY : core/management.c.i
 
 core/management.s: core/management.c.s
@@ -423,7 +423,7 @@ core/management.s: core/management.c.s
 
 # target to generate assembly for a file
 core/management.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.s
 .PHONY : core/management.c.s
 
 core/objects.o: core/objects.c.o
@@ -431,7 +431,7 @@ core/objects.o: core/objects.c.o
 
 # target to build an object file
 core/objects.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.o
 .PHONY : core/objects.c.o
 
 core/objects.i: core/objects.c.i
@@ -439,7 +439,7 @@ core/objects.i: core/objects.c.i
 
 # target to preprocess a source file
 core/objects.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.i
 .PHONY : core/objects.c.i
 
 core/objects.s: core/objects.c.s
@@ -447,7 +447,7 @@ core/objects.s: core/objects.c.s
 
 # target to generate assembly for a file
 core/objects.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.s
 .PHONY : core/objects.c.s
 
 core/observe.o: core/observe.c.o
@@ -455,7 +455,7 @@ core/observe.o: core/observe.c.o
 
 # target to build an object file
 core/observe.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.o
 .PHONY : core/observe.c.o
 
 core/observe.i: core/observe.c.i
@@ -463,7 +463,7 @@ core/observe.i: core/observe.c.i
 
 # target to preprocess a source file
 core/observe.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.i
 .PHONY : core/observe.c.i
 
 core/observe.s: core/observe.c.s
@@ -471,7 +471,7 @@ core/observe.s: core/observe.c.s
 
 # target to generate assembly for a file
 core/observe.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.s
 .PHONY : core/observe.c.s
 
 core/packet.o: core/packet.c.o
@@ -479,7 +479,7 @@ core/packet.o: core/packet.c.o
 
 # target to build an object file
 core/packet.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.o
 .PHONY : core/packet.c.o
 
 core/packet.i: core/packet.c.i
@@ -487,7 +487,7 @@ core/packet.i: core/packet.c.i
 
 # target to preprocess a source file
 core/packet.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.i
 .PHONY : core/packet.c.i
 
 core/packet.s: core/packet.c.s
@@ -495,7 +495,7 @@ core/packet.s: core/packet.c.s
 
 # target to generate assembly for a file
 core/packet.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.s
 .PHONY : core/packet.c.s
 
 core/registration.o: core/registration.c.o
@@ -503,7 +503,7 @@ core/registration.o: core/registration.c.o
 
 # target to build an object file
 core/registration.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.o
 .PHONY : core/registration.c.o
 
 core/registration.i: core/registration.c.i
@@ -511,7 +511,7 @@ core/registration.i: core/registration.c.i
 
 # target to preprocess a source file
 core/registration.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.i
 .PHONY : core/registration.c.i
 
 core/registration.s: core/registration.c.s
@@ -519,7 +519,7 @@ core/registration.s: core/registration.c.s
 
 # target to generate assembly for a file
 core/registration.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.s
 .PHONY : core/registration.c.s
 
 core/reporting.o: core/reporting.c.o
@@ -527,7 +527,7 @@ core/reporting.o: core/reporting.c.o
 
 # target to build an object file
 core/reporting.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.o
 .PHONY : core/reporting.c.o
 
 core/reporting.i: core/reporting.c.i
@@ -535,7 +535,7 @@ core/reporting.i: core/reporting.c.i
 
 # target to preprocess a source file
 core/reporting.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.i
 .PHONY : core/reporting.c.i
 
 core/reporting.s: core/reporting.c.s
@@ -543,7 +543,7 @@ core/reporting.s: core/reporting.c.s
 
 # target to generate assembly for a file
 core/reporting.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.s
 .PHONY : core/reporting.c.s
 
 core/uri.o: core/uri.c.o
@@ -551,7 +551,7 @@ core/uri.o: core/uri.c.o
 
 # target to build an object file
 core/uri.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.o
 .PHONY : core/uri.c.o
 
 core/uri.i: core/uri.c.i
@@ -559,7 +559,7 @@ core/uri.i: core/uri.c.i
 
 # target to preprocess a source file
 core/uri.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.i
 .PHONY : core/uri.c.i
 
 core/uri.s: core/uri.c.s
@@ -567,7 +567,7 @@ core/uri.s: core/uri.c.s
 
 # target to generate assembly for a file
 core/uri.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.s
 .PHONY : core/uri.c.s
 
 core/utils.o: core/utils.c.o
@@ -575,7 +575,7 @@ core/utils.o: core/utils.c.o
 
 # target to build an object file
 core/utils.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.o
 .PHONY : core/utils.c.o
 
 core/utils.i: core/utils.c.i
@@ -583,7 +583,7 @@ core/utils.i: core/utils.c.i
 
 # target to preprocess a source file
 core/utils.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.i
 .PHONY : core/utils.c.i
 
 core/utils.s: core/utils.c.s
@@ -591,7 +591,7 @@ core/utils.s: core/utils.c.s
 
 # target to generate assembly for a file
 core/utils.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.s
 .PHONY : core/utils.c.s
 
 data/cbor.o: data/cbor.c.o
@@ -599,7 +599,7 @@ data/cbor.o: data/cbor.c.o
 
 # target to build an object file
 data/cbor.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.o
 .PHONY : data/cbor.c.o
 
 data/cbor.i: data/cbor.c.i
@@ -607,7 +607,7 @@ data/cbor.i: data/cbor.c.i
 
 # target to preprocess a source file
 data/cbor.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.i
 .PHONY : data/cbor.c.i
 
 data/cbor.s: data/cbor.c.s
@@ -615,7 +615,7 @@ data/cbor.s: data/cbor.c.s
 
 # target to generate assembly for a file
 data/cbor.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.s
 .PHONY : data/cbor.c.s
 
 data/data.o: data/data.c.o
@@ -623,7 +623,7 @@ data/data.o: data/data.c.o
 
 # target to build an object file
 data/data.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.o
 .PHONY : data/data.c.o
 
 data/data.i: data/data.c.i
@@ -631,7 +631,7 @@ data/data.i: data/data.c.i
 
 # target to preprocess a source file
 data/data.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.i
 .PHONY : data/data.c.i
 
 data/data.s: data/data.c.s
@@ -639,7 +639,7 @@ data/data.s: data/data.c.s
 
 # target to generate assembly for a file
 data/data.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.s
 .PHONY : data/data.c.s
 
 data/json.o: data/json.c.o
@@ -647,7 +647,7 @@ data/json.o: data/json.c.o
 
 # target to build an object file
 data/json.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.o
 .PHONY : data/json.c.o
 
 data/json.i: data/json.c.i
@@ -655,7 +655,7 @@ data/json.i: data/json.c.i
 
 # target to preprocess a source file
 data/json.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.i
 .PHONY : data/json.c.i
 
 data/json.s: data/json.c.s
@@ -663,7 +663,7 @@ data/json.s: data/json.c.s
 
 # target to generate assembly for a file
 data/json.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.s
 .PHONY : data/json.c.s
 
 data/json_common.o: data/json_common.c.o
@@ -671,7 +671,7 @@ data/json_common.o: data/json_common.c.o
 
 # target to build an object file
 data/json_common.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.o
 .PHONY : data/json_common.c.o
 
 data/json_common.i: data/json_common.c.i
@@ -679,7 +679,7 @@ data/json_common.i: data/json_common.c.i
 
 # target to preprocess a source file
 data/json_common.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.i
 .PHONY : data/json_common.c.i
 
 data/json_common.s: data/json_common.c.s
@@ -687,7 +687,7 @@ data/json_common.s: data/json_common.c.s
 
 # target to generate assembly for a file
 data/json_common.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.s
 .PHONY : data/json_common.c.s
 
 data/senml_cbor.o: data/senml_cbor.c.o
@@ -695,7 +695,7 @@ data/senml_cbor.o: data/senml_cbor.c.o
 
 # target to build an object file
 data/senml_cbor.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.o
 .PHONY : data/senml_cbor.c.o
 
 data/senml_cbor.i: data/senml_cbor.c.i
@@ -703,7 +703,7 @@ data/senml_cbor.i: data/senml_cbor.c.i
 
 # target to preprocess a source file
 data/senml_cbor.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.i
 .PHONY : data/senml_cbor.c.i
 
 data/senml_cbor.s: data/senml_cbor.c.s
@@ -711,7 +711,7 @@ data/senml_cbor.s: data/senml_cbor.c.s
 
 # target to generate assembly for a file
 data/senml_cbor.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.s
 .PHONY : data/senml_cbor.c.s
 
 data/senml_common.o: data/senml_common.c.o
@@ -719,7 +719,7 @@ data/senml_common.o: data/senml_common.c.o
 
 # target to build an object file
 data/senml_common.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.o
 .PHONY : data/senml_common.c.o
 
 data/senml_common.i: data/senml_common.c.i
@@ -727,7 +727,7 @@ data/senml_common.i: data/senml_common.c.i
 
 # target to preprocess a source file
 data/senml_common.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.i
 .PHONY : data/senml_common.c.i
 
 data/senml_common.s: data/senml_common.c.s
@@ -735,7 +735,7 @@ data/senml_common.s: data/senml_common.c.s
 
 # target to generate assembly for a file
 data/senml_common.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.s
 .PHONY : data/senml_common.c.s
 
 data/senml_json.o: data/senml_json.c.o
@@ -743,7 +743,7 @@ data/senml_json.o: data/senml_json.c.o
 
 # target to build an object file
 data/senml_json.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.o
 .PHONY : data/senml_json.c.o
 
 data/senml_json.i: data/senml_json.c.i
@@ -751,7 +751,7 @@ data/senml_json.i: data/senml_json.c.i
 
 # target to preprocess a source file
 data/senml_json.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.i
 .PHONY : data/senml_json.c.i
 
 data/senml_json.s: data/senml_json.c.s
@@ -759,7 +759,7 @@ data/senml_json.s: data/senml_json.c.s
 
 # target to generate assembly for a file
 data/senml_json.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.s
 .PHONY : data/senml_json.c.s
 
 data/tlv.o: data/tlv.c.o
@@ -767,7 +767,7 @@ data/tlv.o: data/tlv.c.o
 
 # target to build an object file
 data/tlv.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.o
 .PHONY : data/tlv.c.o
 
 data/tlv.i: data/tlv.c.i
@@ -775,7 +775,7 @@ data/tlv.i: data/tlv.c.i
 
 # target to preprocess a source file
 data/tlv.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.i
 .PHONY : data/tlv.c.i
 
 data/tlv.s: data/tlv.c.s
@@ -783,7 +783,7 @@ data/tlv.s: data/tlv.c.s
 
 # target to generate assembly for a file
 data/tlv.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_static.dir/build.make wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.s
 .PHONY : data/tlv.c.s
 
 examples/shared/commandline.o: examples/shared/commandline.c.o
@@ -791,7 +791,7 @@ examples/shared/commandline.o: examples/shared/commandline.c.o
 
 # target to build an object file
 examples/shared/commandline.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_command_line.dir/build.make wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_command_line.dir/build.make wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o
 .PHONY : examples/shared/commandline.c.o
 
 examples/shared/commandline.i: examples/shared/commandline.c.i
@@ -799,7 +799,7 @@ examples/shared/commandline.i: examples/shared/commandline.c.i
 
 # target to preprocess a source file
 examples/shared/commandline.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_command_line.dir/build.make wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_command_line.dir/build.make wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.i
 .PHONY : examples/shared/commandline.c.i
 
 examples/shared/commandline.s: examples/shared/commandline.c.s
@@ -807,7 +807,7 @@ examples/shared/commandline.s: examples/shared/commandline.c.s
 
 # target to generate assembly for a file
 examples/shared/commandline.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_command_line.dir/build.make wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_command_line.dir/build.make wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.s
 .PHONY : examples/shared/commandline.c.s
 
 examples/shared/platform.o: examples/shared/platform.c.o
@@ -815,7 +815,7 @@ examples/shared/platform.o: examples/shared/platform.c.o
 
 # target to build an object file
 examples/shared/platform.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/build.make wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/examples/shared/platform.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/build.make wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/examples/shared/platform.c.o
 .PHONY : examples/shared/platform.c.o
 
 examples/shared/platform.i: examples/shared/platform.c.i
@@ -823,7 +823,7 @@ examples/shared/platform.i: examples/shared/platform.c.i
 
 # target to preprocess a source file
 examples/shared/platform.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/build.make wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/examples/shared/platform.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/build.make wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/examples/shared/platform.c.i
 .PHONY : examples/shared/platform.c.i
 
 examples/shared/platform.s: examples/shared/platform.c.s
@@ -831,7 +831,7 @@ examples/shared/platform.s: examples/shared/platform.c.s
 
 # target to generate assembly for a file
 examples/shared/platform.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/build.make wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/examples/shared/platform.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/build.make wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/examples/shared/platform.c.s
 .PHONY : examples/shared/platform.c.s
 
 tests/helper/connection.o: tests/helper/connection.c.o
@@ -839,7 +839,7 @@ tests/helper/connection.o: tests/helper/connection.c.o
 
 # target to build an object file
 tests/helper/connection.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o
 .PHONY : tests/helper/connection.c.o
 
 tests/helper/connection.i: tests/helper/connection.c.i
@@ -847,7 +847,7 @@ tests/helper/connection.i: tests/helper/connection.c.i
 
 # target to preprocess a source file
 tests/helper/connection.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.i
 .PHONY : tests/helper/connection.c.i
 
 tests/helper/connection.s: tests/helper/connection.c.s
@@ -855,7 +855,7 @@ tests/helper/connection.s: tests/helper/connection.c.s
 
 # target to generate assembly for a file
 tests/helper/connection.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.s
 .PHONY : tests/helper/connection.c.s
 
 transport/tinydtls/connection.o: transport/tinydtls/connection.c.o
@@ -863,7 +863,7 @@ transport/tinydtls/connection.o: transport/tinydtls/connection.c.o
 
 # target to build an object file
 transport/tinydtls/connection.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/connection.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/connection.c.o
 .PHONY : transport/tinydtls/connection.c.o
 
 transport/tinydtls/connection.i: transport/tinydtls/connection.c.i
@@ -871,7 +871,7 @@ transport/tinydtls/connection.i: transport/tinydtls/connection.c.i
 
 # target to preprocess a source file
 transport/tinydtls/connection.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/connection.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/connection.c.i
 .PHONY : transport/tinydtls/connection.c.i
 
 transport/tinydtls/connection.s: transport/tinydtls/connection.c.s
@@ -879,7 +879,7 @@ transport/tinydtls/connection.s: transport/tinydtls/connection.c.s
 
 # target to generate assembly for a file
 transport/tinydtls/connection.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/connection.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/connection.c.s
 .PHONY : transport/tinydtls/connection.c.s
 
 transport/tinydtls/third_party/tinydtls/aes/rijndael.o: transport/tinydtls/third_party/tinydtls/aes/rijndael.c.o
@@ -887,7 +887,7 @@ transport/tinydtls/third_party/tinydtls/aes/rijndael.o: transport/tinydtls/third
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/aes/rijndael.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/aes/rijndael.c.o
 
 transport/tinydtls/third_party/tinydtls/aes/rijndael.i: transport/tinydtls/third_party/tinydtls/aes/rijndael.c.i
@@ -895,7 +895,7 @@ transport/tinydtls/third_party/tinydtls/aes/rijndael.i: transport/tinydtls/third
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/aes/rijndael.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/aes/rijndael.c.i
 
 transport/tinydtls/third_party/tinydtls/aes/rijndael.s: transport/tinydtls/third_party/tinydtls/aes/rijndael.c.s
@@ -903,7 +903,7 @@ transport/tinydtls/third_party/tinydtls/aes/rijndael.s: transport/tinydtls/third
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/aes/rijndael.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/aes/rijndael.c.s
 
 transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.o: transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.o
@@ -911,7 +911,7 @@ transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.o: transport/tinydtls/
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.o
 
 transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.i: transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.i
@@ -919,7 +919,7 @@ transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.i: transport/tinydtls/
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.i
 
 transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.s: transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.s
@@ -927,7 +927,7 @@ transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.s: transport/tinydtls/
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.s
 
 transport/tinydtls/third_party/tinydtls/ccm.o: transport/tinydtls/third_party/tinydtls/ccm.c.o
@@ -935,7 +935,7 @@ transport/tinydtls/third_party/tinydtls/ccm.o: transport/tinydtls/third_party/ti
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/ccm.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ccm.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ccm.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/ccm.c.o
 
 transport/tinydtls/third_party/tinydtls/ccm.i: transport/tinydtls/third_party/tinydtls/ccm.c.i
@@ -943,7 +943,7 @@ transport/tinydtls/third_party/tinydtls/ccm.i: transport/tinydtls/third_party/ti
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/ccm.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ccm.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ccm.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/ccm.c.i
 
 transport/tinydtls/third_party/tinydtls/ccm.s: transport/tinydtls/third_party/tinydtls/ccm.c.s
@@ -951,7 +951,7 @@ transport/tinydtls/third_party/tinydtls/ccm.s: transport/tinydtls/third_party/ti
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/ccm.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ccm.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ccm.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/ccm.c.s
 
 transport/tinydtls/third_party/tinydtls/crypto.o: transport/tinydtls/third_party/tinydtls/crypto.c.o
@@ -959,7 +959,7 @@ transport/tinydtls/third_party/tinydtls/crypto.o: transport/tinydtls/third_party
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/crypto.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/crypto.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/crypto.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/crypto.c.o
 
 transport/tinydtls/third_party/tinydtls/crypto.i: transport/tinydtls/third_party/tinydtls/crypto.c.i
@@ -967,7 +967,7 @@ transport/tinydtls/third_party/tinydtls/crypto.i: transport/tinydtls/third_party
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/crypto.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/crypto.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/crypto.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/crypto.c.i
 
 transport/tinydtls/third_party/tinydtls/crypto.s: transport/tinydtls/third_party/tinydtls/crypto.c.s
@@ -975,7 +975,7 @@ transport/tinydtls/third_party/tinydtls/crypto.s: transport/tinydtls/third_party
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/crypto.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/crypto.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/crypto.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/crypto.c.s
 
 transport/tinydtls/third_party/tinydtls/dtls.o: transport/tinydtls/third_party/tinydtls/dtls.c.o
@@ -983,7 +983,7 @@ transport/tinydtls/third_party/tinydtls/dtls.o: transport/tinydtls/third_party/t
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/dtls.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/dtls.c.o
 
 transport/tinydtls/third_party/tinydtls/dtls.i: transport/tinydtls/third_party/tinydtls/dtls.c.i
@@ -991,7 +991,7 @@ transport/tinydtls/third_party/tinydtls/dtls.i: transport/tinydtls/third_party/t
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/dtls.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/dtls.c.i
 
 transport/tinydtls/third_party/tinydtls/dtls.s: transport/tinydtls/third_party/tinydtls/dtls.c.s
@@ -999,7 +999,7 @@ transport/tinydtls/third_party/tinydtls/dtls.s: transport/tinydtls/third_party/t
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/dtls.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/dtls.c.s
 
 transport/tinydtls/third_party/tinydtls/dtls_debug.o: transport/tinydtls/third_party/tinydtls/dtls_debug.c.o
@@ -1007,7 +1007,7 @@ transport/tinydtls/third_party/tinydtls/dtls_debug.o: transport/tinydtls/third_p
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/dtls_debug.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_debug.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_debug.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/dtls_debug.c.o
 
 transport/tinydtls/third_party/tinydtls/dtls_debug.i: transport/tinydtls/third_party/tinydtls/dtls_debug.c.i
@@ -1015,7 +1015,7 @@ transport/tinydtls/third_party/tinydtls/dtls_debug.i: transport/tinydtls/third_p
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/dtls_debug.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_debug.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_debug.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/dtls_debug.c.i
 
 transport/tinydtls/third_party/tinydtls/dtls_debug.s: transport/tinydtls/third_party/tinydtls/dtls_debug.c.s
@@ -1023,7 +1023,7 @@ transport/tinydtls/third_party/tinydtls/dtls_debug.s: transport/tinydtls/third_p
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/dtls_debug.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_debug.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_debug.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/dtls_debug.c.s
 
 transport/tinydtls/third_party/tinydtls/dtls_prng.o: transport/tinydtls/third_party/tinydtls/dtls_prng.c.o
@@ -1031,7 +1031,7 @@ transport/tinydtls/third_party/tinydtls/dtls_prng.o: transport/tinydtls/third_pa
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/dtls_prng.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_prng.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_prng.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/dtls_prng.c.o
 
 transport/tinydtls/third_party/tinydtls/dtls_prng.i: transport/tinydtls/third_party/tinydtls/dtls_prng.c.i
@@ -1039,7 +1039,7 @@ transport/tinydtls/third_party/tinydtls/dtls_prng.i: transport/tinydtls/third_pa
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/dtls_prng.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_prng.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_prng.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/dtls_prng.c.i
 
 transport/tinydtls/third_party/tinydtls/dtls_prng.s: transport/tinydtls/third_party/tinydtls/dtls_prng.c.s
@@ -1047,7 +1047,7 @@ transport/tinydtls/third_party/tinydtls/dtls_prng.s: transport/tinydtls/third_pa
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/dtls_prng.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_prng.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_prng.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/dtls_prng.c.s
 
 transport/tinydtls/third_party/tinydtls/dtls_time.o: transport/tinydtls/third_party/tinydtls/dtls_time.c.o
@@ -1055,7 +1055,7 @@ transport/tinydtls/third_party/tinydtls/dtls_time.o: transport/tinydtls/third_pa
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/dtls_time.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_time.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_time.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/dtls_time.c.o
 
 transport/tinydtls/third_party/tinydtls/dtls_time.i: transport/tinydtls/third_party/tinydtls/dtls_time.c.i
@@ -1063,7 +1063,7 @@ transport/tinydtls/third_party/tinydtls/dtls_time.i: transport/tinydtls/third_pa
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/dtls_time.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_time.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_time.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/dtls_time.c.i
 
 transport/tinydtls/third_party/tinydtls/dtls_time.s: transport/tinydtls/third_party/tinydtls/dtls_time.c.s
@@ -1071,7 +1071,7 @@ transport/tinydtls/third_party/tinydtls/dtls_time.s: transport/tinydtls/third_pa
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/dtls_time.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_time.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_time.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/dtls_time.c.s
 
 transport/tinydtls/third_party/tinydtls/ecc/ecc.o: transport/tinydtls/third_party/tinydtls/ecc/ecc.c.o
@@ -1079,7 +1079,7 @@ transport/tinydtls/third_party/tinydtls/ecc/ecc.o: transport/tinydtls/third_part
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/ecc/ecc.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ecc/ecc.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ecc/ecc.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/ecc/ecc.c.o
 
 transport/tinydtls/third_party/tinydtls/ecc/ecc.i: transport/tinydtls/third_party/tinydtls/ecc/ecc.c.i
@@ -1087,7 +1087,7 @@ transport/tinydtls/third_party/tinydtls/ecc/ecc.i: transport/tinydtls/third_part
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/ecc/ecc.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ecc/ecc.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ecc/ecc.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/ecc/ecc.c.i
 
 transport/tinydtls/third_party/tinydtls/ecc/ecc.s: transport/tinydtls/third_party/tinydtls/ecc/ecc.c.s
@@ -1095,7 +1095,7 @@ transport/tinydtls/third_party/tinydtls/ecc/ecc.s: transport/tinydtls/third_part
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/ecc/ecc.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ecc/ecc.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ecc/ecc.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/ecc/ecc.c.s
 
 transport/tinydtls/third_party/tinydtls/hmac.o: transport/tinydtls/third_party/tinydtls/hmac.c.o
@@ -1103,7 +1103,7 @@ transport/tinydtls/third_party/tinydtls/hmac.o: transport/tinydtls/third_party/t
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/hmac.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/hmac.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/hmac.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/hmac.c.o
 
 transport/tinydtls/third_party/tinydtls/hmac.i: transport/tinydtls/third_party/tinydtls/hmac.c.i
@@ -1111,7 +1111,7 @@ transport/tinydtls/third_party/tinydtls/hmac.i: transport/tinydtls/third_party/t
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/hmac.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/hmac.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/hmac.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/hmac.c.i
 
 transport/tinydtls/third_party/tinydtls/hmac.s: transport/tinydtls/third_party/tinydtls/hmac.c.s
@@ -1119,7 +1119,7 @@ transport/tinydtls/third_party/tinydtls/hmac.s: transport/tinydtls/third_party/t
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/hmac.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/hmac.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/hmac.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/hmac.c.s
 
 transport/tinydtls/third_party/tinydtls/netq.o: transport/tinydtls/third_party/tinydtls/netq.c.o
@@ -1127,7 +1127,7 @@ transport/tinydtls/third_party/tinydtls/netq.o: transport/tinydtls/third_party/t
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/netq.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/netq.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/netq.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/netq.c.o
 
 transport/tinydtls/third_party/tinydtls/netq.i: transport/tinydtls/third_party/tinydtls/netq.c.i
@@ -1135,7 +1135,7 @@ transport/tinydtls/third_party/tinydtls/netq.i: transport/tinydtls/third_party/t
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/netq.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/netq.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/netq.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/netq.c.i
 
 transport/tinydtls/third_party/tinydtls/netq.s: transport/tinydtls/third_party/tinydtls/netq.c.s
@@ -1143,7 +1143,7 @@ transport/tinydtls/third_party/tinydtls/netq.s: transport/tinydtls/third_party/t
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/netq.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/netq.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/netq.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/netq.c.s
 
 transport/tinydtls/third_party/tinydtls/peer.o: transport/tinydtls/third_party/tinydtls/peer.c.o
@@ -1151,7 +1151,7 @@ transport/tinydtls/third_party/tinydtls/peer.o: transport/tinydtls/third_party/t
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/peer.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/peer.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/peer.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/peer.c.o
 
 transport/tinydtls/third_party/tinydtls/peer.i: transport/tinydtls/third_party/tinydtls/peer.c.i
@@ -1159,7 +1159,7 @@ transport/tinydtls/third_party/tinydtls/peer.i: transport/tinydtls/third_party/t
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/peer.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/peer.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/peer.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/peer.c.i
 
 transport/tinydtls/third_party/tinydtls/peer.s: transport/tinydtls/third_party/tinydtls/peer.c.s
@@ -1167,7 +1167,7 @@ transport/tinydtls/third_party/tinydtls/peer.s: transport/tinydtls/third_party/t
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/peer.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/peer.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/peer.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/peer.c.s
 
 transport/tinydtls/third_party/tinydtls/session.o: transport/tinydtls/third_party/tinydtls/session.c.o
@@ -1175,7 +1175,7 @@ transport/tinydtls/third_party/tinydtls/session.o: transport/tinydtls/third_part
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/session.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/session.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/session.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/session.c.o
 
 transport/tinydtls/third_party/tinydtls/session.i: transport/tinydtls/third_party/tinydtls/session.c.i
@@ -1183,7 +1183,7 @@ transport/tinydtls/third_party/tinydtls/session.i: transport/tinydtls/third_part
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/session.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/session.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/session.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/session.c.i
 
 transport/tinydtls/third_party/tinydtls/session.s: transport/tinydtls/third_party/tinydtls/session.c.s
@@ -1191,7 +1191,7 @@ transport/tinydtls/third_party/tinydtls/session.s: transport/tinydtls/third_part
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/session.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/session.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/session.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/session.c.s
 
 transport/tinydtls/third_party/tinydtls/sha2/sha2.o: transport/tinydtls/third_party/tinydtls/sha2/sha2.c.o
@@ -1199,7 +1199,7 @@ transport/tinydtls/third_party/tinydtls/sha2/sha2.o: transport/tinydtls/third_pa
 
 # target to build an object file
 transport/tinydtls/third_party/tinydtls/sha2/sha2.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/sha2/sha2.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/sha2/sha2.c.o
 .PHONY : transport/tinydtls/third_party/tinydtls/sha2/sha2.c.o
 
 transport/tinydtls/third_party/tinydtls/sha2/sha2.i: transport/tinydtls/third_party/tinydtls/sha2/sha2.c.i
@@ -1207,7 +1207,7 @@ transport/tinydtls/third_party/tinydtls/sha2/sha2.i: transport/tinydtls/third_pa
 
 # target to preprocess a source file
 transport/tinydtls/third_party/tinydtls/sha2/sha2.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/sha2/sha2.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/sha2/sha2.c.i
 .PHONY : transport/tinydtls/third_party/tinydtls/sha2/sha2.c.i
 
 transport/tinydtls/third_party/tinydtls/sha2/sha2.s: transport/tinydtls/third_party/tinydtls/sha2/sha2.c.s
@@ -1215,7 +1215,7 @@ transport/tinydtls/third_party/tinydtls/sha2/sha2.s: transport/tinydtls/third_pa
 
 # target to generate assembly for a file
 transport/tinydtls/third_party/tinydtls/sha2/sha2.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/sha2/sha2.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/sha2/sha2.c.s
 .PHONY : transport/tinydtls/third_party/tinydtls/sha2/sha2.c.s
 
 transport/udp/connection.o: transport/udp/connection.c.o
@@ -1223,7 +1223,7 @@ transport/udp/connection.o: transport/udp/connection.c.o
 
 # target to build an object file
 transport/udp/connection.c.o:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/transport/udp/connection.c.o
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/transport/udp/connection.c.o
 .PHONY : transport/udp/connection.c.o
 
 transport/udp/connection.i: transport/udp/connection.c.i
@@ -1231,7 +1231,7 @@ transport/udp/connection.i: transport/udp/connection.c.i
 
 # target to preprocess a source file
 transport/udp/connection.c.i:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/transport/udp/connection.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/transport/udp/connection.c.i
 .PHONY : transport/udp/connection.c.i
 
 transport/udp/connection.s: transport/udp/connection.c.s
@@ -1239,7 +1239,7 @@ transport/udp/connection.s: transport/udp/connection.c.s
 
 # target to generate assembly for a file
 transport/udp/connection.c.s:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/transport/udp/connection.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(MAKE) $(MAKESILENT) -f wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/build.make wakaama_lib/CMakeFiles/wakaama_transport_posix_udp.dir/transport/udp/connection.c.s
 .PHONY : transport/udp/connection.c.s
 
 # Help Target
@@ -1397,6 +1397,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

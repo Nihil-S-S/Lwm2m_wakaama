@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/nihil/Projects/wakaama_arm2/examples/client/tinydtls")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new
+CMAKE_BINARY_DIR = /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm
 
 # Include any dependencies generated for this target.
 include wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/depend.make
@@ -72,16 +72,16 @@ include wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o: wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o: ../tests/helper/connection.c
 wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o: wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o -MF CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o.d -o CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o -c /home/nihil/Projects/wakaama_arm2/tests/helper/connection.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o -MF CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o.d -o CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o -c /home/nihil/Projects/wakaama_arm2/tests/helper/connection.c
 
 wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/tests/helper/connection.c > CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/tests/helper/connection.c > CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.i
 
 wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/tests/helper/connection.c -o CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/tests/helper/connection.c -o CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.s
 
 wakaama_transport_testing_fake: wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/tests/helper/connection.c.o
 wakaama_transport_testing_fake: wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/build.make
@@ -92,10 +92,10 @@ wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/build: wakaama_transpo
 .PHONY : wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/build
 
 wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/clean:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && $(CMAKE_COMMAND) -P CMakeFiles/wakaama_transport_testing_fake.dir/cmake_clean.cmake
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && $(CMAKE_COMMAND) -P CMakeFiles/wakaama_transport_testing_fake.dir/cmake_clean.cmake
 .PHONY : wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/clean
 
 wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/depend:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls /home/nihil/Projects/wakaama_arm2 /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls /home/nihil/Projects/wakaama_arm2 /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : wakaama_lib/CMakeFiles/wakaama_transport_testing_fake.dir/depend
 

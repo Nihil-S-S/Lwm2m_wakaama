@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new
+CMAKE_BINARY_DIR = /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm
 
 # Include any dependencies generated for this target.
 include wakaama_lib/CMakeFiles/wakaama_static.dir/depend.make
@@ -72,338 +72,338 @@ include wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.o: ../core/bootstrap.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.o -MF CMakeFiles/wakaama_static.dir/core/bootstrap.c.o.d -o CMakeFiles/wakaama_static.dir/core/bootstrap.c.o -c /home/nihil/Projects/wakaama_arm2/core/bootstrap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.o -MF CMakeFiles/wakaama_static.dir/core/bootstrap.c.o.d -o CMakeFiles/wakaama_static.dir/core/bootstrap.c.o -c /home/nihil/Projects/wakaama_arm2/core/bootstrap.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/core/bootstrap.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/bootstrap.c > CMakeFiles/wakaama_static.dir/core/bootstrap.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/bootstrap.c > CMakeFiles/wakaama_static.dir/core/bootstrap.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/core/bootstrap.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/bootstrap.c -o CMakeFiles/wakaama_static.dir/core/bootstrap.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/bootstrap.c -o CMakeFiles/wakaama_static.dir/core/bootstrap.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.o: ../core/discover.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.o -MF CMakeFiles/wakaama_static.dir/core/discover.c.o.d -o CMakeFiles/wakaama_static.dir/core/discover.c.o -c /home/nihil/Projects/wakaama_arm2/core/discover.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.o -MF CMakeFiles/wakaama_static.dir/core/discover.c.o.d -o CMakeFiles/wakaama_static.dir/core/discover.c.o -c /home/nihil/Projects/wakaama_arm2/core/discover.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/core/discover.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/discover.c > CMakeFiles/wakaama_static.dir/core/discover.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/discover.c > CMakeFiles/wakaama_static.dir/core/discover.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/core/discover.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/discover.c -o CMakeFiles/wakaama_static.dir/core/discover.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/discover.c -o CMakeFiles/wakaama_static.dir/core/discover.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.o: ../core/liblwm2m.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.o -MF CMakeFiles/wakaama_static.dir/core/liblwm2m.c.o.d -o CMakeFiles/wakaama_static.dir/core/liblwm2m.c.o -c /home/nihil/Projects/wakaama_arm2/core/liblwm2m.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.o -MF CMakeFiles/wakaama_static.dir/core/liblwm2m.c.o.d -o CMakeFiles/wakaama_static.dir/core/liblwm2m.c.o -c /home/nihil/Projects/wakaama_arm2/core/liblwm2m.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/core/liblwm2m.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/liblwm2m.c > CMakeFiles/wakaama_static.dir/core/liblwm2m.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/liblwm2m.c > CMakeFiles/wakaama_static.dir/core/liblwm2m.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/liblwm2m.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/core/liblwm2m.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/liblwm2m.c -o CMakeFiles/wakaama_static.dir/core/liblwm2m.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/liblwm2m.c -o CMakeFiles/wakaama_static.dir/core/liblwm2m.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.o: ../core/list.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.o -MF CMakeFiles/wakaama_static.dir/core/list.c.o.d -o CMakeFiles/wakaama_static.dir/core/list.c.o -c /home/nihil/Projects/wakaama_arm2/core/list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.o -MF CMakeFiles/wakaama_static.dir/core/list.c.o.d -o CMakeFiles/wakaama_static.dir/core/list.c.o -c /home/nihil/Projects/wakaama_arm2/core/list.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/core/list.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/list.c > CMakeFiles/wakaama_static.dir/core/list.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/list.c > CMakeFiles/wakaama_static.dir/core/list.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/core/list.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/list.c -o CMakeFiles/wakaama_static.dir/core/list.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/list.c -o CMakeFiles/wakaama_static.dir/core/list.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.o: ../core/logging.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.o -MF CMakeFiles/wakaama_static.dir/core/logging.c.o.d -o CMakeFiles/wakaama_static.dir/core/logging.c.o -c /home/nihil/Projects/wakaama_arm2/core/logging.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.o -MF CMakeFiles/wakaama_static.dir/core/logging.c.o.d -o CMakeFiles/wakaama_static.dir/core/logging.c.o -c /home/nihil/Projects/wakaama_arm2/core/logging.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/core/logging.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/logging.c > CMakeFiles/wakaama_static.dir/core/logging.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/logging.c > CMakeFiles/wakaama_static.dir/core/logging.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/logging.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/core/logging.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/logging.c -o CMakeFiles/wakaama_static.dir/core/logging.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/logging.c -o CMakeFiles/wakaama_static.dir/core/logging.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.o: ../core/management.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.o -MF CMakeFiles/wakaama_static.dir/core/management.c.o.d -o CMakeFiles/wakaama_static.dir/core/management.c.o -c /home/nihil/Projects/wakaama_arm2/core/management.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.o -MF CMakeFiles/wakaama_static.dir/core/management.c.o.d -o CMakeFiles/wakaama_static.dir/core/management.c.o -c /home/nihil/Projects/wakaama_arm2/core/management.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/core/management.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/management.c > CMakeFiles/wakaama_static.dir/core/management.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/management.c > CMakeFiles/wakaama_static.dir/core/management.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/management.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/core/management.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/management.c -o CMakeFiles/wakaama_static.dir/core/management.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/management.c -o CMakeFiles/wakaama_static.dir/core/management.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.o: ../core/objects.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.o -MF CMakeFiles/wakaama_static.dir/core/objects.c.o.d -o CMakeFiles/wakaama_static.dir/core/objects.c.o -c /home/nihil/Projects/wakaama_arm2/core/objects.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.o -MF CMakeFiles/wakaama_static.dir/core/objects.c.o.d -o CMakeFiles/wakaama_static.dir/core/objects.c.o -c /home/nihil/Projects/wakaama_arm2/core/objects.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/core/objects.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/objects.c > CMakeFiles/wakaama_static.dir/core/objects.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/objects.c > CMakeFiles/wakaama_static.dir/core/objects.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/objects.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/core/objects.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/objects.c -o CMakeFiles/wakaama_static.dir/core/objects.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/objects.c -o CMakeFiles/wakaama_static.dir/core/objects.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.o: ../core/observe.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.o -MF CMakeFiles/wakaama_static.dir/core/observe.c.o.d -o CMakeFiles/wakaama_static.dir/core/observe.c.o -c /home/nihil/Projects/wakaama_arm2/core/observe.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.o -MF CMakeFiles/wakaama_static.dir/core/observe.c.o.d -o CMakeFiles/wakaama_static.dir/core/observe.c.o -c /home/nihil/Projects/wakaama_arm2/core/observe.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/core/observe.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/observe.c > CMakeFiles/wakaama_static.dir/core/observe.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/observe.c > CMakeFiles/wakaama_static.dir/core/observe.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/observe.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/core/observe.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/observe.c -o CMakeFiles/wakaama_static.dir/core/observe.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/observe.c -o CMakeFiles/wakaama_static.dir/core/observe.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.o: ../core/packet.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.o -MF CMakeFiles/wakaama_static.dir/core/packet.c.o.d -o CMakeFiles/wakaama_static.dir/core/packet.c.o -c /home/nihil/Projects/wakaama_arm2/core/packet.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.o -MF CMakeFiles/wakaama_static.dir/core/packet.c.o.d -o CMakeFiles/wakaama_static.dir/core/packet.c.o -c /home/nihil/Projects/wakaama_arm2/core/packet.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/core/packet.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/packet.c > CMakeFiles/wakaama_static.dir/core/packet.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/packet.c > CMakeFiles/wakaama_static.dir/core/packet.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/packet.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/core/packet.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/packet.c -o CMakeFiles/wakaama_static.dir/core/packet.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/packet.c -o CMakeFiles/wakaama_static.dir/core/packet.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.o: ../core/registration.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.o -MF CMakeFiles/wakaama_static.dir/core/registration.c.o.d -o CMakeFiles/wakaama_static.dir/core/registration.c.o -c /home/nihil/Projects/wakaama_arm2/core/registration.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.o -MF CMakeFiles/wakaama_static.dir/core/registration.c.o.d -o CMakeFiles/wakaama_static.dir/core/registration.c.o -c /home/nihil/Projects/wakaama_arm2/core/registration.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/core/registration.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/registration.c > CMakeFiles/wakaama_static.dir/core/registration.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/registration.c > CMakeFiles/wakaama_static.dir/core/registration.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/registration.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/core/registration.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/registration.c -o CMakeFiles/wakaama_static.dir/core/registration.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/registration.c -o CMakeFiles/wakaama_static.dir/core/registration.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.o: ../core/uri.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.o -MF CMakeFiles/wakaama_static.dir/core/uri.c.o.d -o CMakeFiles/wakaama_static.dir/core/uri.c.o -c /home/nihil/Projects/wakaama_arm2/core/uri.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.o -MF CMakeFiles/wakaama_static.dir/core/uri.c.o.d -o CMakeFiles/wakaama_static.dir/core/uri.c.o -c /home/nihil/Projects/wakaama_arm2/core/uri.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/core/uri.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/uri.c > CMakeFiles/wakaama_static.dir/core/uri.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/uri.c > CMakeFiles/wakaama_static.dir/core/uri.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/uri.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/core/uri.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/uri.c -o CMakeFiles/wakaama_static.dir/core/uri.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/uri.c -o CMakeFiles/wakaama_static.dir/core/uri.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.o: ../core/utils.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.o -MF CMakeFiles/wakaama_static.dir/core/utils.c.o.d -o CMakeFiles/wakaama_static.dir/core/utils.c.o -c /home/nihil/Projects/wakaama_arm2/core/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.o -MF CMakeFiles/wakaama_static.dir/core/utils.c.o.d -o CMakeFiles/wakaama_static.dir/core/utils.c.o -c /home/nihil/Projects/wakaama_arm2/core/utils.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/core/utils.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/utils.c > CMakeFiles/wakaama_static.dir/core/utils.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/utils.c > CMakeFiles/wakaama_static.dir/core/utils.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/core/utils.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/utils.c -o CMakeFiles/wakaama_static.dir/core/utils.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/utils.c -o CMakeFiles/wakaama_static.dir/core/utils.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.o: ../core/reporting.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.o -MF CMakeFiles/wakaama_static.dir/core/reporting.c.o.d -o CMakeFiles/wakaama_static.dir/core/reporting.c.o -c /home/nihil/Projects/wakaama_arm2/core/reporting.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.o -MF CMakeFiles/wakaama_static.dir/core/reporting.c.o.d -o CMakeFiles/wakaama_static.dir/core/reporting.c.o -c /home/nihil/Projects/wakaama_arm2/core/reporting.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/core/reporting.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/reporting.c > CMakeFiles/wakaama_static.dir/core/reporting.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/core/reporting.c > CMakeFiles/wakaama_static.dir/core/reporting.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/core/reporting.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/core/reporting.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/reporting.c -o CMakeFiles/wakaama_static.dir/core/reporting.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/core/reporting.c -o CMakeFiles/wakaama_static.dir/core/reporting.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.o: ../coap/block.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.o -MF CMakeFiles/wakaama_static.dir/coap/block.c.o.d -o CMakeFiles/wakaama_static.dir/coap/block.c.o -c /home/nihil/Projects/wakaama_arm2/coap/block.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.o -MF CMakeFiles/wakaama_static.dir/coap/block.c.o.d -o CMakeFiles/wakaama_static.dir/coap/block.c.o -c /home/nihil/Projects/wakaama_arm2/coap/block.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/coap/block.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/coap/block.c > CMakeFiles/wakaama_static.dir/coap/block.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/coap/block.c > CMakeFiles/wakaama_static.dir/coap/block.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/block.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/coap/block.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/coap/block.c -o CMakeFiles/wakaama_static.dir/coap/block.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/coap/block.c -o CMakeFiles/wakaama_static.dir/coap/block.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.o: ../coap/er-coap-13/er-coap-13.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.o -MF CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.o.d -o CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.o -c /home/nihil/Projects/wakaama_arm2/coap/er-coap-13/er-coap-13.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.o -MF CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.o.d -o CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.o -c /home/nihil/Projects/wakaama_arm2/coap/er-coap-13/er-coap-13.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/coap/er-coap-13/er-coap-13.c > CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/coap/er-coap-13/er-coap-13.c > CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/coap/er-coap-13/er-coap-13.c -o CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/coap/er-coap-13/er-coap-13.c -o CMakeFiles/wakaama_static.dir/coap/er-coap-13/er-coap-13.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.o: ../coap/transaction.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.o -MF CMakeFiles/wakaama_static.dir/coap/transaction.c.o.d -o CMakeFiles/wakaama_static.dir/coap/transaction.c.o -c /home/nihil/Projects/wakaama_arm2/coap/transaction.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.o -MF CMakeFiles/wakaama_static.dir/coap/transaction.c.o.d -o CMakeFiles/wakaama_static.dir/coap/transaction.c.o -c /home/nihil/Projects/wakaama_arm2/coap/transaction.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/coap/transaction.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/coap/transaction.c > CMakeFiles/wakaama_static.dir/coap/transaction.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/coap/transaction.c > CMakeFiles/wakaama_static.dir/coap/transaction.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/coap/transaction.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/coap/transaction.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/coap/transaction.c -o CMakeFiles/wakaama_static.dir/coap/transaction.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/coap/transaction.c -o CMakeFiles/wakaama_static.dir/coap/transaction.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.o: ../data/data.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.o -MF CMakeFiles/wakaama_static.dir/data/data.c.o.d -o CMakeFiles/wakaama_static.dir/data/data.c.o -c /home/nihil/Projects/wakaama_arm2/data/data.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.o -MF CMakeFiles/wakaama_static.dir/data/data.c.o.d -o CMakeFiles/wakaama_static.dir/data/data.c.o -c /home/nihil/Projects/wakaama_arm2/data/data.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/data/data.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/data.c > CMakeFiles/wakaama_static.dir/data/data.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/data.c > CMakeFiles/wakaama_static.dir/data/data.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/data.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/data/data.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/data.c -o CMakeFiles/wakaama_static.dir/data/data.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/data.c -o CMakeFiles/wakaama_static.dir/data/data.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.o: ../data/json.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.o -MF CMakeFiles/wakaama_static.dir/data/json.c.o.d -o CMakeFiles/wakaama_static.dir/data/json.c.o -c /home/nihil/Projects/wakaama_arm2/data/json.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.o -MF CMakeFiles/wakaama_static.dir/data/json.c.o.d -o CMakeFiles/wakaama_static.dir/data/json.c.o -c /home/nihil/Projects/wakaama_arm2/data/json.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/data/json.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/json.c > CMakeFiles/wakaama_static.dir/data/json.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/json.c > CMakeFiles/wakaama_static.dir/data/json.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/json.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/data/json.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/json.c -o CMakeFiles/wakaama_static.dir/data/json.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/json.c -o CMakeFiles/wakaama_static.dir/data/json.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.o: ../data/json_common.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.o -MF CMakeFiles/wakaama_static.dir/data/json_common.c.o.d -o CMakeFiles/wakaama_static.dir/data/json_common.c.o -c /home/nihil/Projects/wakaama_arm2/data/json_common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.o -MF CMakeFiles/wakaama_static.dir/data/json_common.c.o.d -o CMakeFiles/wakaama_static.dir/data/json_common.c.o -c /home/nihil/Projects/wakaama_arm2/data/json_common.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/data/json_common.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/json_common.c > CMakeFiles/wakaama_static.dir/data/json_common.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/json_common.c > CMakeFiles/wakaama_static.dir/data/json_common.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/json_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/data/json_common.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/json_common.c -o CMakeFiles/wakaama_static.dir/data/json_common.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/json_common.c -o CMakeFiles/wakaama_static.dir/data/json_common.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.o: ../data/senml_json.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.o -MF CMakeFiles/wakaama_static.dir/data/senml_json.c.o.d -o CMakeFiles/wakaama_static.dir/data/senml_json.c.o -c /home/nihil/Projects/wakaama_arm2/data/senml_json.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.o -MF CMakeFiles/wakaama_static.dir/data/senml_json.c.o.d -o CMakeFiles/wakaama_static.dir/data/senml_json.c.o -c /home/nihil/Projects/wakaama_arm2/data/senml_json.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/data/senml_json.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/senml_json.c > CMakeFiles/wakaama_static.dir/data/senml_json.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/senml_json.c > CMakeFiles/wakaama_static.dir/data/senml_json.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_json.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/data/senml_json.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/senml_json.c -o CMakeFiles/wakaama_static.dir/data/senml_json.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/senml_json.c -o CMakeFiles/wakaama_static.dir/data/senml_json.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.o: ../data/tlv.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.o -MF CMakeFiles/wakaama_static.dir/data/tlv.c.o.d -o CMakeFiles/wakaama_static.dir/data/tlv.c.o -c /home/nihil/Projects/wakaama_arm2/data/tlv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.o -MF CMakeFiles/wakaama_static.dir/data/tlv.c.o.d -o CMakeFiles/wakaama_static.dir/data/tlv.c.o -c /home/nihil/Projects/wakaama_arm2/data/tlv.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/data/tlv.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/tlv.c > CMakeFiles/wakaama_static.dir/data/tlv.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/tlv.c > CMakeFiles/wakaama_static.dir/data/tlv.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/tlv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/data/tlv.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/tlv.c -o CMakeFiles/wakaama_static.dir/data/tlv.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/tlv.c -o CMakeFiles/wakaama_static.dir/data/tlv.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.o: ../data/cbor.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.o -MF CMakeFiles/wakaama_static.dir/data/cbor.c.o.d -o CMakeFiles/wakaama_static.dir/data/cbor.c.o -c /home/nihil/Projects/wakaama_arm2/data/cbor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.o -MF CMakeFiles/wakaama_static.dir/data/cbor.c.o.d -o CMakeFiles/wakaama_static.dir/data/cbor.c.o -c /home/nihil/Projects/wakaama_arm2/data/cbor.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/data/cbor.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/cbor.c > CMakeFiles/wakaama_static.dir/data/cbor.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/cbor.c > CMakeFiles/wakaama_static.dir/data/cbor.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/cbor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/data/cbor.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/cbor.c -o CMakeFiles/wakaama_static.dir/data/cbor.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/cbor.c -o CMakeFiles/wakaama_static.dir/data/cbor.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.o: ../data/senml_common.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.o -MF CMakeFiles/wakaama_static.dir/data/senml_common.c.o.d -o CMakeFiles/wakaama_static.dir/data/senml_common.c.o -c /home/nihil/Projects/wakaama_arm2/data/senml_common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.o -MF CMakeFiles/wakaama_static.dir/data/senml_common.c.o.d -o CMakeFiles/wakaama_static.dir/data/senml_common.c.o -c /home/nihil/Projects/wakaama_arm2/data/senml_common.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/data/senml_common.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/senml_common.c > CMakeFiles/wakaama_static.dir/data/senml_common.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/senml_common.c > CMakeFiles/wakaama_static.dir/data/senml_common.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/data/senml_common.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/senml_common.c -o CMakeFiles/wakaama_static.dir/data/senml_common.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/senml_common.c -o CMakeFiles/wakaama_static.dir/data/senml_common.c.s
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.o: ../data/senml_cbor.c
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.o: wakaama_lib/CMakeFiles/wakaama_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.o -MF CMakeFiles/wakaama_static.dir/data/senml_cbor.c.o.d -o CMakeFiles/wakaama_static.dir/data/senml_cbor.c.o -c /home/nihil/Projects/wakaama_arm2/data/senml_cbor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.o -MF CMakeFiles/wakaama_static.dir/data/senml_cbor.c.o.d -o CMakeFiles/wakaama_static.dir/data/senml_cbor.c.o -c /home/nihil/Projects/wakaama_arm2/data/senml_cbor.c
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_static.dir/data/senml_cbor.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/senml_cbor.c > CMakeFiles/wakaama_static.dir/data/senml_cbor.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/data/senml_cbor.c > CMakeFiles/wakaama_static.dir/data/senml_cbor.c.i
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/data/senml_cbor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_static.dir/data/senml_cbor.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/senml_cbor.c -o CMakeFiles/wakaama_static.dir/data/senml_cbor.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/data/senml_cbor.c -o CMakeFiles/wakaama_static.dir/data/senml_cbor.c.s
 
 # Object files for target wakaama_static
 wakaama_static_OBJECTS = \
@@ -434,23 +434,23 @@ wakaama_static_OBJECTS = \
 
 # External object files for target wakaama_static
 wakaama_static_EXTERNAL_OBJECTS = \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/connection.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/crypto.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ccm.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/hmac.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_debug.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/netq.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/peer.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_prng.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_time.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/session.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/sha2/sha2.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ecc/ecc.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/examples/shared/platform.c.o" \
-"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o"
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/connection.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/crypto.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ccm.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/hmac.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_debug.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/netq.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/peer.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_prng.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/dtls_time.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/session.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/aes/rijndael_wrap.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/sha2/sha2.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_transport_tinydtls.dir/transport/tinydtls/third_party/tinydtls/ecc/ecc.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_platform_posix.dir/examples/shared/platform.c.o" \
+"/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o"
 
 wakaama_lib/libwakaama_static.a: wakaama_lib/CMakeFiles/wakaama_static.dir/core/bootstrap.c.o
 wakaama_lib/libwakaama_static.a: wakaama_lib/CMakeFiles/wakaama_static.dir/core/discover.c.o
@@ -495,19 +495,19 @@ wakaama_lib/libwakaama_static.a: wakaama_lib/CMakeFiles/wakaama_platform_posix.d
 wakaama_lib/libwakaama_static.a: wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o
 wakaama_lib/libwakaama_static.a: wakaama_lib/CMakeFiles/wakaama_static.dir/build.make
 wakaama_lib/libwakaama_static.a: wakaama_lib/CMakeFiles/wakaama_static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking C static library libwakaama_static.a"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && $(CMAKE_COMMAND) -P CMakeFiles/wakaama_static.dir/cmake_clean_target.cmake
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wakaama_static.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking C static library libwakaama_static.a"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && $(CMAKE_COMMAND) -P CMakeFiles/wakaama_static.dir/cmake_clean_target.cmake
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wakaama_static.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 wakaama_lib/CMakeFiles/wakaama_static.dir/build: wakaama_lib/libwakaama_static.a
 .PHONY : wakaama_lib/CMakeFiles/wakaama_static.dir/build
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/clean:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && $(CMAKE_COMMAND) -P CMakeFiles/wakaama_static.dir/cmake_clean.cmake
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && $(CMAKE_COMMAND) -P CMakeFiles/wakaama_static.dir/cmake_clean.cmake
 .PHONY : wakaama_lib/CMakeFiles/wakaama_static.dir/clean
 
 wakaama_lib/CMakeFiles/wakaama_static.dir/depend:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls /home/nihil/Projects/wakaama_arm2 /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_static.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls /home/nihil/Projects/wakaama_arm2 /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_static.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : wakaama_lib/CMakeFiles/wakaama_static.dir/depend
 

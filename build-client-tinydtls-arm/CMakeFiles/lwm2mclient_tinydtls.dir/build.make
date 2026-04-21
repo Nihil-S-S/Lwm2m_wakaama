@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new
+CMAKE_BINARY_DIR = /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm
 
 # Include any dependencies generated for this target.
 include CMakeFiles/lwm2mclient_tinydtls.dir/depend.make
@@ -72,7 +72,7 @@ include CMakeFiles/lwm2mclient_tinydtls.dir/flags.make
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/lwm2mclient.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/flags.make
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/lwm2mclient.c.o: /home/nihil/Projects/wakaama_arm2/examples/client/common/lwm2mclient.c
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/lwm2mclient.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/lwm2mclient.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/lwm2mclient.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/lwm2mclient.c.o -MF CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/lwm2mclient.c.o.d -o CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/lwm2mclient.c.o -c /home/nihil/Projects/wakaama_arm2/examples/client/common/lwm2mclient.c
 
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/lwm2mclient.c.i: cmake_force
@@ -86,7 +86,7 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_access_control.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/flags.make
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_access_control.c.o: /home/nihil/Projects/wakaama_arm2/examples/client/common/object_access_control.c
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_access_control.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_access_control.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_access_control.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_access_control.c.o -MF CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_access_control.c.o.d -o CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_access_control.c.o -c /home/nihil/Projects/wakaama_arm2/examples/client/common/object_access_control.c
 
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_access_control.c.i: cmake_force
@@ -100,7 +100,7 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_moni.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/flags.make
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_moni.c.o: /home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_moni.c
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_moni.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_moni.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_moni.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_moni.c.o -MF CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_moni.c.o.d -o CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_moni.c.o -c /home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_moni.c
 
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_moni.c.i: cmake_force
@@ -114,7 +114,7 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_stat.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/flags.make
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_stat.c.o: /home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_stat.c
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_stat.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_stat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_stat.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_stat.c.o -MF CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_stat.c.o.d -o CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_stat.c.o -c /home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_stat.c
 
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_connectivity_stat.c.i: cmake_force
@@ -128,7 +128,7 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_device.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/flags.make
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_device.c.o: /home/nihil/Projects/wakaama_arm2/examples/client/common/object_device.c
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_device.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_device.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_device.c.o -MF CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_device.c.o.d -o CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_device.c.o -c /home/nihil/Projects/wakaama_arm2/examples/client/common/object_device.c
 
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_device.c.i: cmake_force
@@ -142,7 +142,7 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_firmware.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/flags.make
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_firmware.c.o: /home/nihil/Projects/wakaama_arm2/examples/client/common/object_firmware.c
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_firmware.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_firmware.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_firmware.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_firmware.c.o -MF CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_firmware.c.o.d -o CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_firmware.c.o -c /home/nihil/Projects/wakaama_arm2/examples/client/common/object_firmware.c
 
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_firmware.c.i: cmake_force
@@ -156,7 +156,7 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_location.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/flags.make
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_location.c.o: /home/nihil/Projects/wakaama_arm2/examples/client/common/object_location.c
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_location.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_location.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_location.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_location.c.o -MF CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_location.c.o.d -o CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_location.c.o -c /home/nihil/Projects/wakaama_arm2/examples/client/common/object_location.c
 
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_location.c.i: cmake_force
@@ -170,7 +170,7 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_security.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/flags.make
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_security.c.o: /home/nihil/Projects/wakaama_arm2/examples/client/common/object_security.c
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_security.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_security.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_security.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_security.c.o -MF CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_security.c.o.d -o CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_security.c.o -c /home/nihil/Projects/wakaama_arm2/examples/client/common/object_security.c
 
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_security.c.i: cmake_force
@@ -184,7 +184,7 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_server.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/flags.make
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_server.c.o: /home/nihil/Projects/wakaama_arm2/examples/client/common/object_server.c
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_server.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_server.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_server.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_server.c.o -MF CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_server.c.o.d -o CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_server.c.o -c /home/nihil/Projects/wakaama_arm2/examples/client/common/object_server.c
 
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_server.c.i: cmake_force
@@ -198,7 +198,7 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/flags.make
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c.o: /home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c.o -MF CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c.o.d -o CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c.o -c /home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c
 
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c.i: cmake_force
@@ -212,7 +212,7 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/system_api.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/flags.make
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/system_api.c.o: /home/nihil/Projects/wakaama_arm2/examples/client/common/system_api.c
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/system_api.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/system_api.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/system_api.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/system_api.c.o -MF CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/system_api.c.o.d -o CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/system_api.c.o -c /home/nihil/Projects/wakaama_arm2/examples/client/common/system_api.c
 
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/system_api.c.i: cmake_force
@@ -226,7 +226,7 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_software_mgmt.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/flags.make
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_software_mgmt.c.o: /home/nihil/Projects/wakaama_arm2/examples/client/common/object_software_mgmt.c
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_software_mgmt.c.o: CMakeFiles/lwm2mclient_tinydtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_software_mgmt.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_software_mgmt.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_software_mgmt.c.o -MF CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_software_mgmt.c.o.d -o CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_software_mgmt.c.o -c /home/nihil/Projects/wakaama_arm2/examples/client/common/object_software_mgmt.c
 
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_software_mgmt.c.i: cmake_force
@@ -269,9 +269,9 @@ lwm2mclient_tinydtls: CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wa
 lwm2mclient_tinydtls: CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_software_mgmt.c.o
 lwm2mclient_tinydtls: CMakeFiles/lwm2mclient_tinydtls.dir/build.make
 lwm2mclient_tinydtls: wakaama_lib/libwakaama_static.a
-lwm2mclient_tinydtls: /home/nihil/arm64-sysroot/usr/lib/libcurl.so
+lwm2mclient_tinydtls: /usr/lib/aarch64-linux-gnu/libcurl.so
 lwm2mclient_tinydtls: CMakeFiles/lwm2mclient_tinydtls.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable lwm2mclient_tinydtls"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable lwm2mclient_tinydtls"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lwm2mclient_tinydtls.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -283,6 +283,6 @@ CMakeFiles/lwm2mclient_tinydtls.dir/clean:
 .PHONY : CMakeFiles/lwm2mclient_tinydtls.dir/clean
 
 CMakeFiles/lwm2mclient_tinydtls.dir/depend:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles/lwm2mclient_tinydtls.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles/lwm2mclient_tinydtls.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/lwm2mclient_tinydtls.dir/depend
 

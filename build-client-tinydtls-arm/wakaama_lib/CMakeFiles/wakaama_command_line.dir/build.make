@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new
+CMAKE_BINARY_DIR = /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm
 
 # Include any dependencies generated for this target.
 include wakaama_lib/CMakeFiles/wakaama_command_line.dir/depend.make
@@ -72,16 +72,16 @@ include wakaama_lib/CMakeFiles/wakaama_command_line.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o: wakaama_lib/CMakeFiles/wakaama_command_line.dir/flags.make
 wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o: ../examples/shared/commandline.c
 wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o: wakaama_lib/CMakeFiles/wakaama_command_line.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o -MF CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o.d -o CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o -c /home/nihil/Projects/wakaama_arm2/examples/shared/commandline.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o"
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o -MF CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o.d -o CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o -c /home/nihil/Projects/wakaama_arm2/examples/shared/commandline.c
 
 wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.i"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/examples/shared/commandline.c > CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.i
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nihil/Projects/wakaama_arm2/examples/shared/commandline.c > CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.i
 
 wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.s"
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/examples/shared/commandline.c -o CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.s
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && /usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nihil/Projects/wakaama_arm2/examples/shared/commandline.c -o CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.s
 
 wakaama_command_line: wakaama_lib/CMakeFiles/wakaama_command_line.dir/examples/shared/commandline.c.o
 wakaama_command_line: wakaama_lib/CMakeFiles/wakaama_command_line.dir/build.make
@@ -92,10 +92,10 @@ wakaama_lib/CMakeFiles/wakaama_command_line.dir/build: wakaama_command_line
 .PHONY : wakaama_lib/CMakeFiles/wakaama_command_line.dir/build
 
 wakaama_lib/CMakeFiles/wakaama_command_line.dir/clean:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib && $(CMAKE_COMMAND) -P CMakeFiles/wakaama_command_line.dir/cmake_clean.cmake
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib && $(CMAKE_COMMAND) -P CMakeFiles/wakaama_command_line.dir/cmake_clean.cmake
 .PHONY : wakaama_lib/CMakeFiles/wakaama_command_line.dir/clean
 
 wakaama_lib/CMakeFiles/wakaama_command_line.dir/depend:
-	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls /home/nihil/Projects/wakaama_arm2 /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/CMakeFiles/wakaama_command_line.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nihil/Projects/wakaama_arm2/examples/client/tinydtls /home/nihil/Projects/wakaama_arm2 /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib /home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/CMakeFiles/wakaama_command_line.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : wakaama_lib/CMakeFiles/wakaama_command_line.dir/depend
 

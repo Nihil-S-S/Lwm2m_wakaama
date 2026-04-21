@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/wakaama_lib/cmake_install.cmake")
+  include("/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/wakaama_lib/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-new/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nihil/Projects/wakaama_arm2/build-client-tinydtls-arm/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

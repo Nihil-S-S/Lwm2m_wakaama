@@ -820,9 +820,9 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
   /usr/aarch64-linux-gnu/include/sys/stat.h \
   /usr/aarch64-linux-gnu/include/bits/stat.h \
   /usr/aarch64-linux-gnu/include/bits/struct_stat.h \
-  /home/nihil/arm64-sysroot/usr/include/curl/curl.h \
-  /home/nihil/arm64-sysroot/usr/include/curl/curlver.h \
-  /home/nihil/arm64-sysroot/usr/include/curl/system.h \
+  /usr/include/aarch64-linux-gnu/curl/curl.h \
+  /usr/include/aarch64-linux-gnu/curl/curlver.h \
+  /usr/include/aarch64-linux-gnu/curl/system.h \
   /usr/aarch64-linux-gnu/include/sys/socket.h \
   /usr/aarch64-linux-gnu/include/bits/types/struct_iovec.h \
   /usr/aarch64-linux-gnu/include/bits/socket.h \
@@ -847,12 +847,12 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
   /usr/aarch64-linux-gnu/include/linux/limits.h \
   /usr/aarch64-linux-gnu/include/bits/posix2_lim.h \
   /usr/aarch64-linux-gnu/include/sys/time.h \
-  /home/nihil/arm64-sysroot/usr/include/curl/easy.h \
-  /home/nihil/arm64-sysroot/usr/include/curl/multi.h \
-  /home/nihil/arm64-sysroot/usr/include/curl/curl.h \
-  /home/nihil/arm64-sysroot/usr/include/curl/urlapi.h \
-  /home/nihil/arm64-sysroot/usr/include/curl/options.h \
-  /home/nihil/arm64-sysroot/usr/include/curl/typecheck-gcc.h
+  /usr/include/aarch64-linux-gnu/curl/easy.h \
+  /usr/include/aarch64-linux-gnu/curl/multi.h \
+  /usr/include/aarch64-linux-gnu/curl/curl.h \
+  /usr/include/aarch64-linux-gnu/curl/urlapi.h \
+  /usr/include/aarch64-linux-gnu/curl/options.h \
+  /usr/include/aarch64-linux-gnu/curl/typecheck-gcc.h
 
 CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c.o: /home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c \
   /usr/aarch64-linux-gnu/include/stdc-predef.h \
@@ -1000,13 +1000,9 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 
 /home/nihil/Projects/wakaama_arm2/examples/client/common/object_test.c:
 
-/home/nihil/arm64-sysroot/usr/include/curl/typecheck-gcc.h:
+/usr/include/aarch64-linux-gnu/curl/options.h:
 
-/home/nihil/arm64-sysroot/usr/include/curl/options.h:
-
-/home/nihil/arm64-sysroot/usr/include/curl/system.h:
-
-/home/nihil/arm64-sysroot/usr/include/curl/curlver.h:
+/usr/include/aarch64-linux-gnu/curl/system.h:
 
 /usr/aarch64-linux-gnu/include/bits/types/struct_sched_param.h:
 
@@ -1015,8 +1011,6 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 /usr/aarch64-linux-gnu/include/bits/posix1_lim.h:
 
 /usr/aarch64-linux-gnu/include/limits.h:
-
-/home/nihil/arm64-sysroot/usr/include/curl/urlapi.h:
 
 /usr/lib/gcc-cross/aarch64-linux-gnu/11/include/syslimits.h:
 
@@ -1052,6 +1046,8 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 
 /usr/aarch64-linux-gnu/include/asm-generic/int-ll64.h:
 
+/usr/include/aarch64-linux-gnu/curl/multi.h:
+
 /usr/aarch64-linux-gnu/include/bits/procfs.h:
 
 /usr/aarch64-linux-gnu/include/asm-generic/types.h:
@@ -1073,8 +1069,6 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 /usr/aarch64-linux-gnu/include/bits/types/__sigval_t.h:
 
 /usr/aarch64-linux-gnu/include/bits/types/sig_atomic_t.h:
-
-/home/nihil/arm64-sysroot/usr/include/curl/curl.h:
 
 /home/nihil/Projects/wakaama_arm2/examples/client/common/object_software_mgmt.c:
 
@@ -1126,8 +1120,6 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 
 /usr/aarch64-linux-gnu/include/bits/floatn-common.h:
 
-/home/nihil/arm64-sysroot/usr/include/curl/easy.h:
-
 /home/nihil/Projects/wakaama_arm2/examples/shared/commandline.h:
 
 /usr/aarch64-linux-gnu/include/arpa/inet.h:
@@ -1137,6 +1129,8 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 /usr/aarch64-linux-gnu/include/bits/types/clockid_t.h:
 
 /usr/aarch64-linux-gnu/include/asm/bitsperlong.h:
+
+/usr/include/aarch64-linux-gnu/curl/typecheck-gcc.h:
 
 /usr/aarch64-linux-gnu/include/bits/sigstksz.h:
 
@@ -1164,11 +1158,11 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 
 /usr/lib/gcc-cross/aarch64-linux-gnu/11/include/stdbool.h:
 
+/usr/include/aarch64-linux-gnu/curl/curl.h:
+
 /usr/aarch64-linux-gnu/include/bits/netdb.h:
 
 /usr/aarch64-linux-gnu/include/bits/libc-header-start.h:
-
-/home/nihil/arm64-sysroot/usr/include/curl/multi.h:
 
 /usr/aarch64-linux-gnu/include/bits/sigaction.h:
 
@@ -1181,6 +1175,8 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 /usr/aarch64-linux-gnu/include/bits/pthread_stack_min.h:
 
 /usr/aarch64-linux-gnu/include/bits/wchar.h:
+
+/usr/include/aarch64-linux-gnu/curl/easy.h:
 
 /usr/aarch64-linux-gnu/include/bits/pthreadtypes-arch.h:
 
@@ -1241,6 +1237,8 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 /usr/aarch64-linux-gnu/include/sys/select.h:
 
 /usr/aarch64-linux-gnu/include/gnu/stubs.h:
+
+/usr/include/aarch64-linux-gnu/curl/curlver.h:
 
 /usr/aarch64-linux-gnu/include/stdint.h:
 
@@ -1327,6 +1325,8 @@ CMakeFiles/lwm2mclient_tinydtls.dir/home/nihil/Projects/wakaama_arm2/examples/cl
 /usr/aarch64-linux-gnu/include/bits/sockaddr.h:
 
 /usr/aarch64-linux-gnu/include/asm/socket.h:
+
+/usr/include/aarch64-linux-gnu/curl/urlapi.h:
 
 /usr/aarch64-linux-gnu/include/asm-generic/posix_types.h:
 
