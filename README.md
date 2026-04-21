@@ -293,6 +293,73 @@ Options:
   -4		Use IPv4 connection. Default: IPv6 connection
   -S BYTES	CoAP block size. Options: 16, 32, 64, 128, 256, 512, 1024. Default: 1024
 ```
+---
+
+## Building the ARM Client (lwm2mclient_tinydtls)
+
+This repository includes Object 9 (Software Management) using libcurl for firmware downloads.
+
+### Prerequisites
+
+```bash
+# Cross-compiler for ARM64
+sudo apt-get install gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu
+
+# libcurl for ARM64 (required for Object 9 download support)
+sudo dpkg --add-architecture arm64
+sudo tee /etc/apt/sources.list > /dev/null << 'EOF'
+deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy main restricted universe multiverse
+deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy-updates main restricted universe multiverse
+deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy-security main restricted universe multiverse
+deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy-backports main restricted universe multiverse
+deb [arch=amd64,i386] http://in.archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse
+deb [arch=amd64,i386] http://security.ubuntu.com/ubuntu jammy-security main restricted universe multiverse
+deb [arch=amd64,i386] http://in.archive.ubuntu.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb [arch=amd64,i386] http://in.archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse
+EOF
+sudo apt-get update
+sudo apt-get install -y -o Dpkg::Options::="--force-overwrite" libcurl4-openssl-dev:arm64
+```
+
+### Build for ARM64 (cross-compile)
+
+```bash
+cmake -S examples/client/tinydtls -B build-client-tinydtls-arm \
+  -DCMAKE_C_COMPILER=aarch64-linux-gnu-gcc \
+  -DCMAKE_AR=aarch64-linux-gnu-ar \
+  -DCMAKE_STRIP=aarch64-linux-gnu-strip \
+  -DWAKAAMA_LOG_LEVEL=DBG \
+  -DWAKAAMA_UNIT_TESTS=OFF \
+  -DCURL_LIBRARY=/usr/lib/aarch64-linux-gnu/libcurl.so \
+  -DCURL_INCLUDE_DIR=/usr/include/aarch64-linux-gnu
+
+cmake --build build-client-tinydtls-arm -j$(nproc)
+# Output: build-client-tinydtls-arm/lwm2mclient_tinydtls  (ELF ARM aarch64)
+```
+
+Deploy to board:
+```bash
+scp build-client-tinydtls-arm/lwm2mclient_tinydtls root@<board-ip>:/usr/bin/
+```
+
+### Build for PC (x86-64)
+
+```bash
+# Install libcurl for PC
+sudo apt-get install libcurl4-openssl-dev
+
+cmake -S examples/client/tinydtls -B build-client-tinydtls-pc
+cmake --build build-client-tinydtls-pc -j$(nproc)
+# Output: build-client-tinydtls-pc/lwm2mclient_tinydtls  (ELF x86-64)
+```
+
+Run on PC:
+```bash
+./build-client-tinydtls-pc/lwm2mclient_tinydtls -h <server-ip> -p 5683 -4 -n <endpoint-name>
+```
+
+---
+
 ### Bootstrap Server example
 
  * ``cmake -S examples/bootstrap_server -B build-bootstrap``
