@@ -744,6 +744,7 @@ static void prv_backup_objects(lwm2m_context_t *context) {
             }
         }
         backupObjectArray[i] = (lwm2m_object_t *)lwm2m_malloc(sizeof(lwm2m_object_t));
+        if (backupObjectArray[i] == NULL) return;
         memset(backupObjectArray[i], 0, sizeof(lwm2m_object_t));
     }
 

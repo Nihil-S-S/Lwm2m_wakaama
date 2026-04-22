@@ -422,11 +422,21 @@ void copy_security_object(lwm2m_object_t *objectDest, lwm2m_object_t *objectSrc)
             return;
         }
         memcpy(instanceDest, instanceSrc, sizeof(security_instance_t));
-        instanceDest->uri = (char *)lwm2m_malloc(strlen(instanceSrc->uri) + 1); // NOSONAR
-        strcpy(instanceDest->uri, instanceSrc->uri);                            // NOSONAR
+        instanceDest->uri = lwm2m_strdup(instanceSrc->uri);
+        if (instanceDest->uri == NULL) {
+            lwm2m_free(instanceDest);
+            return;
+        }
         if (instanceSrc->securityMode == LWM2M_SECURITY_MODE_PRE_SHARED_KEY) {
             instanceDest->publicIdentity = lwm2m_strdup(instanceSrc->publicIdentity);
             instanceDest->secretKey = lwm2m_strdup(instanceSrc->secretKey);
+            if (instanceDest->publicIdentity == NULL || instanceDest->secretKey == NULL) {
+                lwm2m_free(instanceDest->uri);
+                lwm2m_free(instanceDest->publicIdentity);
+                lwm2m_free(instanceDest->secretKey);
+                lwm2m_free(instanceDest);
+                return;
+            }
         }
         instanceSrc = (security_instance_t *)instanceSrc->next;
         if (previousInstanceDest == NULL) {
@@ -486,8 +496,12 @@ lwm2m_object_t *get_security_object(int serverId, const char *serverUri, char *b
 
         memset(targetP, 0, sizeof(security_instance_t));
         targetP->instanceId = 0;
-        targetP->uri = (char *)lwm2m_malloc(strlen(serverUri) + 1); // NOSONAR
-        strcpy(targetP->uri, serverUri);                            // NOSONAR
+        targetP->uri = lwm2m_strdup(serverUri);
+        if (targetP->uri == NULL) {
+            lwm2m_free(targetP);
+            lwm2m_free(securityObj);
+            return NULL;
+        }
 
         targetP->securityMode = LWM2M_SECURITY_MODE_NONE;
         targetP->publicIdentity = NULL;
@@ -497,8 +511,13 @@ lwm2m_object_t *get_security_object(int serverId, const char *serverUri, char *b
         if (bsPskId != NULL || psk != NULL) {
             targetP->securityMode = LWM2M_SECURITY_MODE_PRE_SHARED_KEY;
             if (bsPskId) {
-                targetP->publicIdentity = strdup(bsPskId);
-                targetP->publicIdLen = strlen(bsPskId); // NOSONAR
+                targetP->publicIdentity = lwm2m_strdup(bsPskId);
+                if (targetP->publicIdentity == NULL) {
+                    lwm2m_free(targetP->uri);
+                    lwm2m_free(targetP);
+                    lwm2m_free(securityObj);
+                    return NULL;
+                }
                 targetP->publicIdLen = strlen(bsPskId); // NOSONAR
             }
             if (pskLen > 0) {

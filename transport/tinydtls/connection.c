@@ -370,6 +370,10 @@ lwm2m_dtls_connection_t *lwm2m_connection_new_incoming(lwm2m_dtls_connection_t *
         connP->next = connList;
 
         connP->dtlsSession = (session_t *)malloc(sizeof(session_t));
+        if (connP->dtlsSession == NULL) {
+            free(connP);
+            return NULL;
+        }
         memset(connP->dtlsSession, 0, sizeof(session_t));
         connP->dtlsSession->addr.sin6 = connP->addr;
         connP->dtlsSession->size = connP->addrLen;
